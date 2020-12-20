@@ -189,7 +189,7 @@ U 1 1 5FC2996A
 P 7300 4250
 F 0 "J1" H 7380 4242 50  0000 L CNN
 F 1 "PWR/QB" H 7380 4151 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal" H 7300 4250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0800_2x04_P3.00mm_Horizontal" H 7300 4250 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/ps/PS-43045.pdf" H 7300 4250 50  0001 C CNN
 	1    7300 4250
 	1    0    0    -1  
