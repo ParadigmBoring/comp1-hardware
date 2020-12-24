@@ -423,7 +423,7 @@ U 1 1 5FB46EA3
 P 1900 1850
 F 0 "F1" V 1703 1850 50  0000 C CNN
 F 1 "2A" V 1794 1850 50  0000 C CNN
-F 2 "" V 1830 1850 50  0001 C CNN
+F 2 "BoringFootprints:BelFuse_0679H" V 1830 1850 50  0001 C CNN
 F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0679h-series.pdf" H 1900 1850 50  0001 C CNN
 F 4 "0679H2000-05" V 1900 1850 50  0001 C CNN "MFPN"
 	1    1900 1850
