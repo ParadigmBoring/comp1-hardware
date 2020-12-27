@@ -44,6 +44,7 @@ F 0 "U8" H 7450 4350 50  0000 C CNN
 F 1 "SN65HVD232" H 7350 3750 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7700 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 7600 4500 50  0001 C CNN
+F 4 "SN65HVD232DR" H 7700 4100 50  0001 C CNN "MFPN"
 	1    7700 4100
 	1    0    0    -1  
 $EndComp
@@ -57,8 +58,9 @@ U 1 1 5FB52878
 P 8550 4100
 F 0 "R26" V 8345 4100 50  0000 C CNN
 F 1 "120" V 8436 4100 50  0000 C CNN
-F 2 "" V 8590 4090 50  0001 C CNN
-F 3 "~" H 8550 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.42x2.65mm_HandSolder" V 8590 4090 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 8550 4100 50  0001 C CNN
+F 4 "RMCF1210FT120R" V 8550 4100 50  0001 C CNN "MFPN"
 	1    8550 4100
 	0    1    1    0   
 $EndComp
@@ -68,7 +70,7 @@ U 1 1 5FB538A6
 P 8900 4100
 F 0 "JP1" H 8900 4312 50  0000 C CNN
 F 1 "CAN_TERM" H 8900 4221 50  0000 C CNN
-F 2 "" H 8900 4100 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8900 4100 50  0001 C CNN
 F 3 "~" H 8900 4100 50  0001 C CNN
 	1    8900 4100
 	1    0    0    -1  
@@ -133,17 +135,6 @@ F 1 "GND" H 9305 4127 50  0000 C CNN
 F 2 "" H 9300 4300 50  0001 C CNN
 F 3 "" H 9300 4300 50  0001 C CNN
 	1    9300 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5FB58397
-P 9300 4100
-F 0 "C8" H 9415 4146 50  0000 L CNN
-F 1 "0.1uF" H 9415 4055 50  0000 L CNN
-F 2 "" H 9338 3950 50  0001 C CNN
-F 3 "~" H 9300 4100 50  0001 C CNN
-	1    9300 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -211,8 +202,9 @@ U 1 1 5FB5EF88
 P 700 1450
 F 0 "J1" H 618 625 50  0000 C CNN
 F 1 "Conn_01x12" H 618 716 50  0000 C CNN
-F 2 "" H 700 1450 50  0001 C CNN
-F 3 "~" H 700 1450 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal" H 700 1450 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/ps/PS-43045.pdf" H 700 1450 50  0001 C CNN
+F 4 "0430451200" H 700 1450 50  0001 C CNN "MFPN"
 	1    700  1450
 	-1   0    0    1   
 $EndComp
@@ -280,8 +272,9 @@ U 1 1 5FB68FE4
 P 1500 1650
 F 0 "F1" V 1303 1650 50  0000 C CNN
 F 1 "2A" V 1394 1650 50  0000 C CNN
-F 2 "" V 1430 1650 50  0001 C CNN
-F 3 "~" H 1500 1650 50  0001 C CNN
+F 2 "BoringFootprints:BelFuse_0679H" V 1430 1650 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0679h-series.pdf" H 1500 1650 50  0001 C CNN
+F 4 "0679H2000-05" V 1500 1650 50  0001 C CNN "MFPN"
 	1    1500 1650
 	0    1    1    0   
 $EndComp
@@ -291,8 +284,9 @@ U 1 1 5FB699D0
 P 1850 1650
 F 0 "D1" H 1850 1434 50  0000 C CNN
 F 1 "D_Schottky" H 1850 1525 50  0000 C CNN
-F 2 "" H 1850 1650 50  0001 C CNN
-F 3 "~" H 1850 1650 50  0001 C CNN
+F 2 "BoringFootprints:DO-221AC" H 1850 1650 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/87719/vssaf5n50.pdf" H 1850 1650 50  0001 C CNN
+F 4 "VSSAF5N50-M3/6A" H 1850 1650 50  0001 C CNN "MFPN"
 	1    1850 1650
 	-1   0    0    1   
 $EndComp
@@ -421,8 +415,9 @@ U 1 1 5FC5EC02
 P 5500 4700
 F 0 "R13" H 5568 4746 50  0000 L CNN
 F 1 "4.7K" H 5568 4655 50  0000 L CNN
-F 2 "" V 5540 4690 50  0001 C CNN
-F 3 "~" H 5500 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5540 4690 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5500 4700 50  0001 C CNN
+F 4 "RMCF0603FT4K70" H 5500 4700 50  0001 C CNN "MFPN"
 	1    5500 4700
 	1    0    0    -1  
 $EndComp
@@ -434,17 +429,6 @@ Wire Wire Line
 	5800 5000 5800 4850
 Wire Wire Line
 	5050 5000 5800 5000
-$Comp
-L Device:R_US R18
-U 1 1 5FC65161
-P 5800 4700
-F 0 "R18" H 5868 4746 50  0000 L CNN
-F 1 "4.7K" H 5868 4655 50  0000 L CNN
-F 2 "" V 5840 4690 50  0001 C CNN
-F 3 "~" H 5800 4700 50  0001 C CNN
-	1    5800 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 4550 5500 4500
 Wire Wire Line
@@ -485,6 +469,7 @@ F 0 "U7" H 6971 5696 50  0000 R CNN
 F 1 "BME280" H 6971 5605 50  0000 R CNN
 F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7400 5450 50  0001 C CNN
 F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf" H 7400 5450 50  0001 C CNN
+F 4 "" H 7400 5650 50  0001 C CNN "MFPN"
 	1    7400 5650
 	1    0    0    -1  
 $EndComp
@@ -566,7 +551,7 @@ U 1 1 5FCF7D7F
 P 8650 5350
 F 0 "JP2" V 8604 5437 50  0000 L CNN
 F 1 "BME280_ADDR" V 8695 5437 50  0000 L CNN
-F 2 "" H 8650 5350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 8650 5350 50  0001 C CNN
 F 3 "~" H 8650 5350 50  0001 C CNN
 	1    8650 5350
 	0    1    1    0   
@@ -599,17 +584,6 @@ F 3 "" H 9500 5450 50  0001 C CNN
 	1    9500 5450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C16
-U 1 1 5FD19B8D
-P 9500 5700
-F 0 "C16" H 9615 5746 50  0000 L CNN
-F 1 "0.1uF" H 9615 5655 50  0000 L CNN
-F 2 "" H 9538 5550 50  0001 C CNN
-F 3 "~" H 9500 5700 50  0001 C CNN
-	1    9500 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 5850 9500 5900
 Wire Wire Line
@@ -623,17 +597,6 @@ F 1 "GND" H 9955 5777 50  0000 C CNN
 F 2 "" H 9950 5950 50  0001 C CNN
 F 3 "" H 9950 5950 50  0001 C CNN
 	1    9950 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 5FD24EB3
-P 9950 5700
-F 0 "C17" H 10065 5746 50  0000 L CNN
-F 1 "1uF" H 10065 5655 50  0000 L CNN
-F 2 "" H 9988 5550 50  0001 C CNN
-F 3 "~" H 9950 5700 50  0001 C CNN
-	1    9950 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -765,8 +728,9 @@ U 1 1 5FD426E2
 P 4000 1350
 F 0 "C14" H 4115 1396 50  0000 L CNN
 F 1 "0.1uF" H 4115 1305 50  0000 L CNN
-F 2 "" H 4038 1200 50  0001 C CNN
-F 3 "~" H 4000 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 1200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4000 1350 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 4000 1350 50  0001 C CNN "MFPN"
 	1    4000 1350
 	1    0    0    -1  
 $EndComp
@@ -775,17 +739,6 @@ Wire Wire Line
 Connection ~ 4000 1150
 Wire Wire Line
 	4000 1150 4450 1150
-$Comp
-L Device:C C15
-U 1 1 5FD4A5ED
-P 4450 1350
-F 0 "C15" H 4565 1396 50  0000 L CNN
-F 1 "10uF" H 4565 1305 50  0000 L CNN
-F 2 "" H 4488 1200 50  0001 C CNN
-F 3 "~" H 4450 1350 50  0001 C CNN
-	1    4450 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 1200 4450 1150
 Connection ~ 4450 1150
@@ -821,8 +774,9 @@ U 1 1 5FD55D12
 P 2950 1350
 F 0 "C10" H 3065 1396 50  0000 L CNN
 F 1 "1uF" H 3065 1305 50  0000 L CNN
-F 2 "" H 2988 1200 50  0001 C CNN
-F 3 "~" H 2950 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 1200 50  0001 C CNN
+F 3 "https://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KA8NNNC.jsp" H 2950 1350 50  0001 C CNN
+F 4 "CL10B105KA8NNNC" H 2950 1350 50  0001 C CNN "MFPN"
 	1    2950 1350
 	1    0    0    -1  
 $EndComp
@@ -930,8 +884,9 @@ U 1 1 5FC3EF1E
 P 2600 2450
 F 0 "C9" H 2715 2496 50  0000 L CNN
 F 1 "10uF" H 2715 2405 50  0000 L CNN
-F 2 "" H 2638 2300 50  0001 C CNN
-F 3 "~" H 2600 2450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2638 2300 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/murata-electronics/GRM32EC72A106KE05L/7319245" H 2600 2450 50  0001 C CNN
+F 4 "GRM32EC72A106KE05L" H 2600 2450 50  0001 C CNN "MFPN"
 	1    2600 2450
 	1    0    0    -1  
 $EndComp
@@ -989,7 +944,7 @@ U 1 1 5FC9C105
 P 6800 3800
 F 0 "R44" H 6868 3846 50  0000 L CNN
 F 1 "DNP" H 6868 3755 50  0000 L CNN
-F 2 "" V 6840 3790 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6840 3790 50  0001 C CNN
 F 3 "~" H 6800 3800 50  0001 C CNN
 	1    6800 3800
 	1    0    0    -1  
@@ -1006,7 +961,7 @@ U 1 1 5FCA966D
 P 6500 3800
 F 0 "R43" H 6568 3846 50  0000 L CNN
 F 1 "DNP" H 6568 3755 50  0000 L CNN
-F 2 "" V 6540 3790 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6540 3790 50  0001 C CNN
 F 3 "~" H 6500 3800 50  0001 C CNN
 	1    6500 3800
 	1    0    0    -1  
@@ -1033,26 +988,26 @@ F 3 "" H 6500 3550 50  0001 C CNN
 	1    6500 3550
 	1    0    0    -1  
 $EndComp
-Text Label 5900 5100 2    50   ~ 0
+Text Label 6100 5100 2    50   ~ 0
 I2C_SCL
 $Comp
 L Device:R_US R39
 U 1 1 5FD02186
 P 5350 5100
 F 0 "R39" V 5300 5200 50  0000 L CNN
-F 1 "DNP" V 5300 4850 50  0000 L CNN
-F 2 "" V 5390 5090 50  0001 C CNN
+F 1 "0" V 5300 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 5090 50  0001 C CNN
 F 3 "~" H 5350 5100 50  0001 C CNN
 	1    5350 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5900 5100 5500 5100
+	6100 5100 5500 5100
 Wire Wire Line
 	5050 5100 5200 5100
 Text Label 8000 5350 0    50   ~ 0
 BME280_SDO
-Text Label 6050 5500 2    50   ~ 0
+Text Label 6100 5500 2    50   ~ 0
 BME280_SDO
 $Comp
 L Device:R_US R41
@@ -1060,7 +1015,7 @@ U 1 1 5FD25888
 P 5350 5500
 F 0 "R41" V 5300 5600 50  0000 L CNN
 F 1 "DNP" V 5300 5250 50  0000 L CNN
-F 2 "" V 5390 5490 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 5490 50  0001 C CNN
 F 3 "~" H 5350 5500 50  0001 C CNN
 	1    5350 5500
 	0    1    1    0   
@@ -1079,18 +1034,18 @@ F 3 "https://www.st.com/resource/en/datasheet/stm32l476rg.pdf" H 3200 4650 50  0
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 5500 6050 5500
-Text Label 6050 5600 2    50   ~ 0
+	5500 5500 6100 5500
+Text Label 6100 5600 2    50   ~ 0
 I2C_SDA
 Wire Wire Line
-	6050 5600 5500 5600
+	6100 5600 5500 5600
 $Comp
 L Device:R_US R42
 U 1 1 5FD42396
 P 5350 5600
 F 0 "R42" V 5300 5700 50  0000 L CNN
-F 1 "DNP" V 5300 5350 50  0000 L CNN
-F 2 "" V 5390 5590 50  0001 C CNN
+F 1 "0" V 5300 5350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 5590 50  0001 C CNN
 F 3 "~" H 5350 5600 50  0001 C CNN
 	1    5350 5600
 	0    1    1    0   
@@ -1103,7 +1058,7 @@ U 1 1 5FD49EE9
 P 1250 1850
 F 0 "C11" V 1200 1650 50  0000 L CNN
 F 1 "DNP" V 1200 1900 50  0000 L CNN
-F 2 "" H 1288 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 1700 50  0001 C CNN
 F 3 "~" H 1250 1850 50  0001 C CNN
 	1    1250 1850
 	0    1    1    0   
@@ -1114,7 +1069,7 @@ U 1 1 5FD4B0E1
 P 1250 2050
 F 0 "C12" V 1200 1850 50  0000 L CNN
 F 1 "DNP" V 1200 2100 50  0000 L CNN
-F 2 "" H 1288 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 1900 50  0001 C CNN
 F 3 "~" H 1250 2050 50  0001 C CNN
 	1    1250 2050
 	0    1    1    0   
@@ -1149,42 +1104,9 @@ F 3 "" H 1750 1850 50  0001 C CNN
 	1    1500 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C13
-U 1 1 5FD72C7B
-P 3000 2450
-F 0 "C13" H 3115 2496 50  0000 L CNN
-F 1 "10uF" H 3115 2405 50  0000 L CNN
-F 2 "" H 3038 2300 50  0001 C CNN
-F 3 "~" H 3000 2450 50  0001 C CNN
-	1    3000 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C22
-U 1 1 5FD730EC
-P 3400 2450
-F 0 "C22" H 3515 2496 50  0000 L CNN
-F 1 "10uF" H 3515 2405 50  0000 L CNN
-F 2 "" H 3438 2300 50  0001 C CNN
-F 3 "~" H 3400 2450 50  0001 C CNN
-	1    3400 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C23
-U 1 1 5FD7345F
-P 3800 2450
-F 0 "C23" H 3915 2496 50  0000 L CNN
-F 1 "10uF" H 3915 2405 50  0000 L CNN
-F 2 "" H 3838 2300 50  0001 C CNN
-F 3 "~" H 3800 2450 50  0001 C CNN
-	1    3800 2450
-	1    0    0    -1  
-$EndComp
 Text Label 8450 5950 2    50   ~ 0
 BME280_CSB
-Text Label 6050 5300 2    50   ~ 0
+Text Label 6100 5300 2    50   ~ 0
 BME280_CSB
 $Comp
 L Device:R_US R40
@@ -1192,7 +1114,7 @@ U 1 1 5FD8546C
 P 5350 5300
 F 0 "R40" V 5300 5400 50  0000 L CNN
 F 1 "DNP" V 5300 5050 50  0000 L CNN
-F 2 "" V 5390 5290 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 5290 50  0001 C CNN
 F 3 "~" H 5350 5300 50  0001 C CNN
 	1    5350 5300
 	0    1    1    0   
@@ -1200,14 +1122,14 @@ $EndComp
 Wire Wire Line
 	5200 5300 5050 5300
 Wire Wire Line
-	5500 5300 6050 5300
+	5500 5300 6100 5300
 $Comp
 L Device:R_US R45
 U 1 1 5FD96AE2
 P 8750 5950
 F 0 "R45" V 8700 6050 50  0000 L CNN
-F 1 "0" V 8700 5700 50  0000 L CNN
-F 2 "" V 8790 5940 50  0001 C CNN
+F 1 "0" V 8700 5800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8790 5940 50  0001 C CNN
 F 3 "~" H 8750 5950 50  0001 C CNN
 	1    8750 5950
 	0    1    1    0   
@@ -1237,34 +1159,12 @@ Wire Wire Line
 Wire Wire Line
 	7250 1200 7150 1200
 $Comp
-L Device:R_US R22
-U 1 1 5FD94E5D
-P 7400 1400
-F 0 "R22" V 7350 1250 50  0000 C CNN
-F 1 "0" V 7350 1500 50  0000 C CNN
-F 2 "" V 7440 1390 50  0001 C CNN
-F 3 "~" H 7400 1400 50  0001 C CNN
-	1    7400 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R21
-U 1 1 5FD94AC1
-P 7400 1300
-F 0 "R21" V 7350 1150 50  0000 C CNN
-F 1 "0" V 7350 1400 50  0000 C CNN
-F 2 "" V 7440 1290 50  0001 C CNN
-F 3 "~" H 7400 1300 50  0001 C CNN
-	1    7400 1300
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_US R20
 U 1 1 5FD93979
 P 7400 1200
 F 0 "R20" V 7350 1050 50  0000 C CNN
 F 1 "0" V 7350 1300 50  0000 C CNN
-F 2 "" V 7440 1190 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1190 50  0001 C CNN
 F 3 "~" H 7400 1200 50  0001 C CNN
 	1    7400 1200
 	0    1    1    0   
@@ -1299,8 +1199,9 @@ U 1 1 5FCF539A
 P 2550 1350
 F 0 "C?" H 2665 1396 50  0000 L CNN
 F 1 "47uF" H 2665 1305 50  0000 L CNN
-F 2 "" H 2550 1350 50  0001 C CNN
-F 3 "~" H 2550 1350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2550 1350 50  0001 C CNN
+F 3 "https://www.nichicon.co.jp/english/products/pdfs/e-uvr.pdf" H 2550 1350 50  0001 C CNN
+F 4 "UVR1H470MED" H 2550 1350 50  0001 C CNN "MFPN"
 	1    2550 1350
 	1    0    0    -1  
 $EndComp
@@ -1521,5 +1422,123 @@ F 2 "" H 5400 2100 50  0001 C CNN
 F 3 "" H 5400 2100 50  0001 C CNN
 	1    5400 2100
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDBB838
+P 3000 2450
+F 0 "C?" H 3115 2496 50  0000 L CNN
+F 1 "10uF" H 3115 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3038 2300 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/murata-electronics/GRM32EC72A106KE05L/7319245" H 3000 2450 50  0001 C CNN
+F 4 "GRM32EC72A106KE05L" H 3000 2450 50  0001 C CNN "MFPN"
+	1    3000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDBBBB7
+P 3400 2450
+F 0 "C?" H 3515 2496 50  0000 L CNN
+F 1 "10uF" H 3515 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3438 2300 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/murata-electronics/GRM32EC72A106KE05L/7319245" H 3400 2450 50  0001 C CNN
+F 4 "GRM32EC72A106KE05L" H 3400 2450 50  0001 C CNN "MFPN"
+	1    3400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDBBEF4
+P 3800 2450
+F 0 "C?" H 3915 2496 50  0000 L CNN
+F 1 "10uF" H 3915 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3838 2300 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/murata-electronics/GRM32EC72A106KE05L/7319245" H 3800 2450 50  0001 C CNN
+F 4 "GRM32EC72A106KE05L" H 3800 2450 50  0001 C CNN "MFPN"
+	1    3800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDBC22B
+P 4450 1350
+F 0 "C?" H 4565 1396 50  0000 L CNN
+F 1 "10uF" H 4565 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4488 1200 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/murata-electronics/GRM32EC72A106KE05L/7319245" H 4450 1350 50  0001 C CNN
+F 4 "GRM32EC72A106KE05L" H 4450 1350 50  0001 C CNN "MFPN"
+	1    4450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDC42DE
+P 9950 5700
+F 0 "C?" H 10065 5746 50  0000 L CNN
+F 1 "1uF" H 10065 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9988 5550 50  0001 C CNN
+F 3 "https://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KA8NNNC.jsp" H 9950 5700 50  0001 C CNN
+F 4 "CL10B105KA8NNNC" H 9950 5700 50  0001 C CNN "MFPN"
+	1    9950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDC5E15
+P 9300 4100
+F 0 "C?" H 9415 4146 50  0000 L CNN
+F 1 "0.1uF" H 9415 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9338 3950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 9300 4100 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 9300 4100 50  0001 C CNN "MFPN"
+	1    9300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDC7C16
+P 9500 5700
+F 0 "C?" H 9615 5746 50  0000 L CNN
+F 1 "0.1uF" H 9615 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9538 5550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 9500 5700 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 9500 5700 50  0001 C CNN "MFPN"
+	1    9500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FDE430F
+P 5800 4700
+F 0 "R?" H 5868 4746 50  0000 L CNN
+F 1 "4.7K" H 5868 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5840 4690 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5800 4700 50  0001 C CNN
+F 4 "RMCF0603FT4K70" H 5800 4700 50  0001 C CNN "MFPN"
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FDE7107
+P 7400 1300
+F 0 "R?" V 7350 1150 50  0000 C CNN
+F 1 "0" V 7350 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1290 50  0001 C CNN
+F 3 "~" H 7400 1300 50  0001 C CNN
+	1    7400 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FDE7429
+P 7400 1400
+F 0 "R?" V 7350 1250 50  0000 C CNN
+F 1 "0" V 7350 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1390 50  0001 C CNN
+F 3 "~" H 7400 1400 50  0001 C CNN
+	1    7400 1400
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
