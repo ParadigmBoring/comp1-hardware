@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:TemplateProject-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -657,7 +656,7 @@ F 3 "" H 6900 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q1
+L Device:Q_NMOS_GSD Q1
 U 1 1 5FA03BC6
 P 6800 3350
 F 0 "Q1" H 7006 3396 50  0000 L CNN
@@ -1184,7 +1183,7 @@ F 4 "311-1341-1-ND" H 7000 1400 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_GDS Q2
+L Device:Q_PMOS_GSD Q2
 U 1 1 5F9F8BCA
 P 7450 3100
 F 0 "Q2" H 7656 3146 50  0000 L CNN

@@ -469,7 +469,7 @@ F 0 "U7" H 6971 5696 50  0000 R CNN
 F 1 "BME280" H 6971 5605 50  0000 R CNN
 F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7400 5450 50  0001 C CNN
 F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf" H 7400 5450 50  0001 C CNN
-F 4 "" H 7400 5650 50  0001 C CNN "MFPN"
+F 4 "BME280" H 7400 5650 50  0001 C CNN "MFPN"
 	1    7400 5650
 	1    0    0    -1  
 $EndComp
@@ -678,6 +678,7 @@ F 0 "VR1" H 3550 1415 50  0000 C CNN
 F 1 "R-78C12-1.0" H 3550 1324 50  0000 C CNN
 F 2 "BoringFootprints:Recom_R-78c-1.0" H 3750 850 50  0001 C CNN
 F 3 "https://recom-power.com/pdf/Innoline/R-78C-1.0.pdf" H 3750 850 50  0001 C CNN
+F 4 "R-78C12-1.0" H 3550 1150 50  0001 C CNN "MFPN"
 	1    3550 1150
 	1    0    0    -1  
 $EndComp
@@ -1228,9 +1229,10 @@ L Device:LED D?
 U 1 1 5FD1BB9C
 P 4350 2300
 F 0 "D?" V 4389 2183 50  0000 R CNN
-F 1 "LED" V 4298 2183 50  0000 R CNN
-F 2 "" H 4350 2300 50  0001 C CNN
-F 3 "~" H 4350 2300 50  0001 C CNN
+F 1 "28V" V 4298 2183 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 2300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 4350 2300 50  0001 C CNN
+F 4 "150080GS75000" V 4350 2300 50  0001 C CNN "MFPN"
 	1    4350 2300
 	0    -1   -1   0   
 $EndComp
@@ -1252,9 +1254,10 @@ L Device:R_US R?
 U 1 1 5FD30357
 P 4350 2650
 F 0 "R?" H 4418 2696 50  0000 L CNN
-F 1 "13K" H 4418 2605 50  0000 L CNN
-F 2 "" V 4390 2640 50  0001 C CNN
-F 3 "~" H 4350 2650 50  0001 C CNN
+F 1 "11K" H 4418 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4390 2640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 4350 2650 50  0001 C CNN
+F 4 "RMCF0603FT11K0" H 4350 2650 50  0001 C CNN "MFPN"
 	1    4350 2650
 	1    0    0    -1  
 $EndComp
@@ -1273,17 +1276,6 @@ F 3 "" H 4350 2850 50  0001 C CNN
 	1    4350 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D?
-U 1 1 5FD4DFAC
-P 4700 2300
-F 0 "D?" V 4739 2183 50  0000 R CNN
-F 1 "LED" V 4648 2183 50  0000 R CNN
-F 2 "" H 4700 2300 50  0001 C CNN
-F 3 "~" H 4700 2300 50  0001 C CNN
-	1    4700 2300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4700 2100 4700 2150
 $Comp
@@ -1291,9 +1283,10 @@ L Device:R_US R?
 U 1 1 5FD4DFC1
 P 4700 2650
 F 0 "R?" H 4768 2696 50  0000 L CNN
-F 1 "5K" H 4768 2605 50  0000 L CNN
-F 2 "" V 4740 2640 50  0001 C CNN
-F 3 "~" H 4700 2650 50  0001 C CNN
+F 1 "4.7K" H 4768 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4740 2640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 4700 2650 50  0001 C CNN
+F 4 "RMCF0603FT4K70" H 4700 2650 50  0001 C CNN "MFPN"
 	1    4700 2650
 	1    0    0    -1  
 $EndComp
@@ -1323,17 +1316,6 @@ F 3 "" H 4700 2100 50  0001 C CNN
 	1    4700 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D?
-U 1 1 5FD58925
-P 5050 2300
-F 0 "D?" V 5089 2183 50  0000 R CNN
-F 1 "LED" V 4998 2183 50  0000 R CNN
-F 2 "" H 5050 2300 50  0001 C CNN
-F 3 "~" H 5050 2300 50  0001 C CNN
-	1    5050 2300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5050 2100 5050 2150
 $Comp
@@ -1342,8 +1324,9 @@ U 1 1 5FD5893A
 P 5050 2650
 F 0 "R?" H 5118 2696 50  0000 L CNN
 F 1 "1.5K" H 5118 2605 50  0000 L CNN
-F 2 "" V 5090 2640 50  0001 C CNN
-F 3 "~" H 5050 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5090 2640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5050 2650 50  0001 C CNN
+F 4 "RMCF0603FT1K50" H 5050 2650 50  0001 C CNN "MFPN"
 	1    5050 2650
 	1    0    0    -1  
 $EndComp
@@ -1362,17 +1345,6 @@ F 3 "" H 5050 2850 50  0001 C CNN
 	1    5050 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D?
-U 1 1 5FD58950
-P 5400 2300
-F 0 "D?" V 5439 2183 50  0000 R CNN
-F 1 "LED" V 5348 2183 50  0000 R CNN
-F 2 "" H 5400 2300 50  0001 C CNN
-F 3 "~" H 5400 2300 50  0001 C CNN
-	1    5400 2300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5400 2100 5400 2150
 $Comp
@@ -1380,9 +1352,10 @@ L Device:R_US R?
 U 1 1 5FD5895B
 P 5400 2650
 F 0 "R?" H 5468 2696 50  0000 L CNN
-F 1 "660" H 5468 2605 50  0000 L CNN
-F 2 "" V 5440 2640 50  0001 C CNN
-F 3 "~" H 5400 2650 50  0001 C CNN
+F 1 "47" H 5468 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5440 2640 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5400 2650 50  0001 C CNN
+F 4 "RMCF0603FT50R0" H 5400 2650 50  0001 C CNN "MFPN"
 	1    5400 2650
 	1    0    0    -1  
 $EndComp
@@ -1540,5 +1513,41 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1390 50  0
 F 3 "~" H 7400 1400 50  0001 C CNN
 	1    7400 1400
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FEC1BD0
+P 4700 2300
+F 0 "D?" V 4739 2183 50  0000 R CNN
+F 1 "12V" V 4648 2183 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 2300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 4700 2300 50  0001 C CNN
+F 4 "150080GS75000" V 4700 2300 50  0001 C CNN "MFPN"
+	1    4700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FEC205D
+P 5050 2300
+F 0 "D?" V 5089 2183 50  0000 R CNN
+F 1 "5V" V 4998 2183 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5050 2300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 5050 2300 50  0001 C CNN
+F 4 "150080GS75000" V 5050 2300 50  0001 C CNN "MFPN"
+	1    5050 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FEC2466
+P 5400 2300
+F 0 "D?" V 5439 2183 50  0000 R CNN
+F 1 "3V3" V 5348 2183 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5400 2300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080GS75000.pdf" H 5400 2300 50  0001 C CNN
+F 4 "150080GS75000" V 5400 2300 50  0001 C CNN "MFPN"
+	1    5400 2300
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
