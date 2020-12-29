@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 7)
+    (drawings 8)
     (tracks 974)
     (zones 0)
     (modules 108)
@@ -3342,7 +3342,7 @@
   )
 
   (module BoringFootprints:Paradigm_Title_Block (layer B.Cu) (tedit 5F94DA39) (tstamp 5FEAD3D3)
-    (at 173.25 79.25 270)
+    (at 172.5 79.25 270)
     (fp_text reference REF** (at 0 -4.5 270) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
@@ -5631,6 +5631,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430451200/430451200.stp
+      (offset (xyz 7.5 4 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module Connector_Molex:Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal (layer F.Cu) (tedit 5B79A392) (tstamp 5FE10A1D)
@@ -5686,6 +5691,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPARDIGMMOD}/boringlib/3dModels/436500500.stp
+      (offset (xyz 6 4 2.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
     )
   )
 
@@ -5743,6 +5753,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPARDIGMMOD}/boringlib/3dModels/436500500.stp
+      (offset (xyz 6 4 2.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module Connector_Molex:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal (layer F.Cu) (tedit 5B799D96) (tstamp 5FD6FC89)
@@ -5799,6 +5814,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
+      (offset (xyz 3 4 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module Connector_Molex:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal (layer F.Cu) (tedit 5B799D96) (tstamp 5FD6FCAB)
@@ -5854,6 +5874,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
+      (offset (xyz 3 4 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
     )
   )
 
@@ -8027,14 +8052,17 @@
     )
   )
 
+  (gr_text A (at 172.25 87.25 90) (layer B.SilkS) (tstamp 5FEA8F73)
+    (effects (font (size 0.9 0.9) (thickness 0.1)) (justify mirror))
+  )
   (gr_text "Paradigm Boring" (at 128.5 126.25) (layer F.SilkS)
     (effects (font (size 2.75 2.75) (thickness 0.3)))
   )
   (gr_text "Odin Navigation Board" (at 111 130) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)) (justify left))
   )
-  (gr_text PLV001_Odin (at 173 78.25 90) (layer B.SilkS)
-    (effects (font (size 0.75 0.75) (thickness 0.1)) (justify mirror))
+  (gr_text PLV001_Odin (at 172.25 78.75 90) (layer B.SilkS)
+    (effects (font (size 0.9 0.9) (thickness 0.1)) (justify mirror))
   )
   (gr_line (start 101 153) (end 101 53) (layer Edge.Cuts) (width 0.05) (tstamp 5FE1A536))
   (gr_line (start 176 153) (end 101 153) (layer Edge.Cuts) (width 0.05))
