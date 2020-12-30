@@ -29,7 +29,7 @@ F7 "HEARTBEAT" O R 6000 4600 50
 F8 "HEARTBEAT_BUFF" O R 6000 4700 50 
 $EndSheet
 $Comp
-L power:GND #PWR0101
+L PCB_PLV005_Beyla-rescue:GND-power #PWR0101
 U 1 1 5FB8B7CA
 P 7100 3450
 F 0 "#PWR0101" H 7100 3200 50  0001 C CNN
@@ -69,7 +69,7 @@ Connection ~ 2800 4150
 Wire Wire Line
 	2800 4150 2650 4150
 $Comp
-L power:GND #PWR0102
+L PCB_PLV005_Beyla-rescue:GND-power #PWR0102
 U 1 1 5FB9ACDA
 P 2800 3600
 F 0 "#PWR0102" H 2800 3350 50  0001 C CNN
@@ -88,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3000 5800 3000
 $Comp
-L Device:C C8
+L PCB_PLV005_Beyla-rescue:C-Device C8
 U 1 1 5FBF38DA
 P 5800 3300
 F 0 "C8" H 5915 3346 50  0000 L CNN
@@ -99,7 +99,7 @@ F 3 "~" H 5800 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L PCB_PLV005_Beyla-rescue:C-Device C9
 U 1 1 5FBF4C36
 P 4550 3300
 F 0 "C9" H 4665 3346 50  0000 L CNN
@@ -136,7 +136,7 @@ Wire Wire Line
 	4550 3600 5200 3600
 Connection ~ 5200 3600
 $Comp
-L power:+5V #PWR0103
+L PCB_PLV005_Beyla-rescue:+5V-power #PWR0103
 U 1 1 5FBFDEDC
 P 4550 2950
 F 0 "#PWR0103" H 4550 2800 50  0001 C CNN
@@ -148,7 +148,7 @@ F 3 "" H 4550 2950 50  0001 C CNN
 $EndComp
 Connection ~ 4550 3000
 $Comp
-L Device:LED D1
+L PCB_PLV005_Beyla-rescue:LED-Device D1
 U 1 1 5FBFEF04
 P 4050 3000
 F 0 "D1" H 4043 3217 50  0000 C CNN
@@ -159,7 +159,7 @@ F 3 "~" H 4050 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R18
+L PCB_PLV005_Beyla-rescue:R_US-Device R18
 U 1 1 5FC06267
 P 3550 3300
 F 0 "R18" H 3618 3346 50  0000 L CNN
@@ -184,7 +184,7 @@ NoConn ~ 7100 4650
 Wire Wire Line
 	4550 2950 4550 3000
 $Comp
-L Connector_Generic:Conn_01x08 J1
+L PCB_PLV005_Beyla-rescue:Conn_01x08-Connector_Generic J1
 U 1 1 5FC2996A
 P 7300 4250
 F 0 "J1" H 7380 4242 50  0000 L CNN
@@ -195,7 +195,7 @@ F 3 "https://www.molex.com/pdm_docs/ps/PS-43045.pdf" H 7300 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L PCB_PLV005_Beyla-rescue:Conn_01x04-Connector_Generic J2
 U 1 1 5FC2E912
 P 2450 4350
 F 0 "J2" H 2368 3925 50  0000 C CNN
@@ -206,7 +206,7 @@ F 3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R19
+L PCB_PLV005_Beyla-rescue:R_US-Device R19
 U 1 1 5FC33E92
 P 2800 3850
 F 0 "R19" H 2868 3896 50  0000 L CNN
@@ -221,7 +221,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 4350 2800 4350
 $Comp
-L boringlib:Recom_R-78c-1.0 VR1
+L PCB_PLV005_Beyla-rescue:Recom_R-78c-1.0-boringlib VR1
 U 1 1 5FC3D4E7
 P 5200 3000
 F 0 "VR1" H 5200 3315 50  0000 C CNN
@@ -232,7 +232,7 @@ F 3 "" H 5400 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
+L PCB_PLV005_Beyla-rescue:+5V-power #PWR0104
 U 1 1 5FDAF5EF
 P 2800 4500
 F 0 "#PWR0104" H 2800 4350 50  0001 C CNN
