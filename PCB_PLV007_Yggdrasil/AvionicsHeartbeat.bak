@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L boringlib:74HC21 U3
+L boringlib:74HC21 U4
 U 3 1 5F956B40
 P 900 1350
-F 0 "U3" H 1130 1396 50  0000 L CNN
+F 0 "U4" H 1130 1396 50  0000 L CNN
 F 1 "74HC21" H 1130 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 900 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 900 1350 50  0001 C CNN
@@ -57,10 +57,10 @@ Wire Wire Line
 Wire Wire Line
 	2900 3950 2850 3950
 $Comp
-L boringlib:74HC266 U4
+L boringlib:74HC266 U5
 U 5 1 5F96A885
 P 1650 1350
-F 0 "U4" H 1880 1396 50  0000 L CNN
+F 0 "U5" H 1880 1396 50  0000 L CNN
 F 1 "74HC266" H 1880 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1650 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 1650 1350 50  0001 C CNN
@@ -275,10 +275,10 @@ Connection ~ 1800 6150
 Wire Wire Line
 	1800 6150 3050 6150
 $Comp
-L boringlib:74HC21 U6
+L boringlib:74HC21 U7
 U 1 1 5F9A3A97
 P 4250 5100
-F 0 "U6" H 4250 5475 50  0000 C CNN
+F 0 "U7" H 4250 5475 50  0000 C CNN
 F 1 "74HC21" H 4250 5384 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 5100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 4250 5100 50  0001 C CNN
@@ -341,8 +341,8 @@ L boringlib:74HC08 U?
 U 2 1 5F98DD9A
 P 5000 3350
 AR Path="/5F98DD9A" Ref="U?"  Part="2" 
-AR Path="/5F94F01A/5F98DD9A" Ref="U5"  Part="2" 
-F 0 "U5" H 5000 3675 50  0000 C CNN
+AR Path="/5F94F01A/5F98DD9A" Ref="U6"  Part="2" 
+F 0 "U6" H 5000 3675 50  0000 C CNN
 F 1 "74HC08" H 5000 3584 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 3450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 5000 3450 50  0001 C CNN
@@ -355,8 +355,8 @@ L boringlib:74HC08 U?
 U 5 1 5F99254E
 P 2450 1350
 AR Path="/5F99254E" Ref="U?"  Part="5" 
-AR Path="/5F94F01A/5F99254E" Ref="U5"  Part="5" 
-F 0 "U5" H 2680 1396 50  0000 L CNN
+AR Path="/5F94F01A/5F99254E" Ref="U6"  Part="5" 
+F 0 "U6" H 2680 1396 50  0000 L CNN
 F 1 "74HC08" H 2680 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 1450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 2450 1450 50  0001 C CNN
@@ -501,10 +501,10 @@ $EndComp
 Text Notes 5300 4350 0    50   ~ 0
 6.25ms timer\nw/ 16 addresses\nthis gives 10Hz cycle
 $Comp
-L Timer:LTC6993xS6-1 U8
+L Timer:LTC6993xS6-1 U9
 U 1 1 5F9E4DE4
 P 6100 3350
-F 0 "U8" H 5850 3600 50  0000 L CNN
+F 0 "U9" H 5850 3600 50  0000 L CNN
 F 1 "LTC6993xS6-1" H 6150 3600 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6100 2950 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/69931234fc.pdf" H 6150 3450 50  0001 C CNN
@@ -580,10 +580,10 @@ Connection ~ 7550 3750
 Wire Wire Line
 	7550 3750 7550 3800
 $Comp
-L boringlib:74HC21 U6
+L boringlib:74HC21 U7
 U 3 1 5FA1BD3A
 P 3200 1350
-F 0 "U6" H 3430 1396 50  0000 L CNN
+F 0 "U7" H 3430 1396 50  0000 L CNN
 F 1 "74HC21" H 3430 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 1350 50  0001 C CNN
@@ -811,10 +811,10 @@ Connection ~ 7550 3350
 Wire Wire Line
 	7550 3350 7550 3400
 $Comp
-L boringlib:74LVC1G17 U7
+L boringlib:74LVC1G17 U8
 U 1 1 5FAAF254
 P 8500 3350
-F 0 "U7" H 8500 3667 50  0000 C CNN
+F 0 "U8" H 8500 3667 50  0000 C CNN
 F 1 "74LVC1G17" H 8500 3576 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 8500 3350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1605119972692" H 8500 3350 50  0001 C CNN
@@ -827,10 +827,10 @@ Wire Wire Line
 Text HLabel 9000 3350 2    50   Output ~ 0
 HEARTBEAT_BUFF
 $Comp
-L boringlib:74LVC1G17 U7
+L boringlib:74LVC1G17 U8
 U 2 1 5FAB53A5
 P 3950 1350
-F 0 "U7" H 4180 1396 50  0000 L CNN
+F 0 "U8" H 4180 1396 50  0000 L CNN
 F 1 "74LVC1G17" H 4180 1305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3950 1350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1605119972692" H 3950 1350 50  0001 C CNN
@@ -1027,8 +1027,8 @@ L boringlib:74HC08 U?
 U 1 1 5FC35096
 P 3900 3250
 AR Path="/5FC35096" Ref="U?"  Part="2" 
-AR Path="/5F94F01A/5FC35096" Ref="U5"  Part="1" 
-F 0 "U5" H 3900 3575 50  0000 C CNN
+AR Path="/5F94F01A/5FC35096" Ref="U6"  Part="1" 
+F 0 "U6" H 3900 3575 50  0000 C CNN
 F 1 "74HC08" H 3900 3484 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3900 3350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf?ts=1603725517834" H 3900 3350 50  0001 C CNN
@@ -1037,10 +1037,10 @@ F 4 "CD74HC08M96" H 3900 3250 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC21 U3
+L boringlib:74HC21 U4
 U 1 1 5FE984B4
 P 3200 3150
-F 0 "U3" H 3100 3400 50  0000 L CNN
+F 0 "U4" H 3100 3400 50  0000 L CNN
 F 1 "74HC21" H 3050 2900 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3150 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3150 50  0001 C CNN
@@ -1049,10 +1049,10 @@ F 4 "CD74HC21M96" H 3200 3150 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC21 U3
+L boringlib:74HC21 U4
 U 2 1 5FE9990D
 P 3200 3800
-F 0 "U3" H 3100 4050 50  0000 L CNN
+F 0 "U4" H 3100 4050 50  0000 L CNN
 F 1 "74HC21" H 3050 3550 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3800 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 3200 3800 50  0001 C CNN
@@ -1061,10 +1061,10 @@ F 4 "CD74HC21M96" H 3200 3800 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC266 U4
+L boringlib:74HC266 U5
 U 4 1 5FE9B538
 P 3350 6600
-F 0 "U4" H 3250 6800 50  0000 L CNN
+F 0 "U5" H 3250 6800 50  0000 L CNN
 F 1 "74HC266" H 3200 6400 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6600 50  0001 C CNN
@@ -1073,10 +1073,10 @@ F 4 "SN74HC266DR" H 3350 6600 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC266 U4
+L boringlib:74HC266 U5
 U 1 1 5FE9F230
 P 3350 4950
-F 0 "U4" H 3250 5150 50  0000 L CNN
+F 0 "U5" H 3250 5150 50  0000 L CNN
 F 1 "74HC266" H 3200 4750 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 4950 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 4950 50  0001 C CNN
@@ -1085,10 +1085,10 @@ F 4 "SN74HC266DR" H 3350 4950 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC266 U4
+L boringlib:74HC266 U5
 U 2 1 5FEA124F
 P 3350 5500
-F 0 "U4" H 3250 5700 50  0000 L CNN
+F 0 "U5" H 3250 5700 50  0000 L CNN
 F 1 "74HC266" H 3200 5300 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 5500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 5500 50  0001 C CNN
@@ -1097,10 +1097,10 @@ F 4 "SN74HC266DR" H 3350 5500 50  0001 C CNN "MFPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC266 U4
+L boringlib:74HC266 U5
 U 3 1 5FEA2778
 P 3350 6050
-F 0 "U4" H 3250 6250 50  0000 L CNN
+F 0 "U5" H 3250 6250 50  0000 L CNN
 F 1 "74HC266" H 3200 5850 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc266.pdf?ts=1603548217449" H 3350 6050 50  0001 C CNN

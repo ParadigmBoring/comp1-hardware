@@ -312,9 +312,10 @@ P 7550 4050
 AR Path="/5FC58146" Ref="Q?"  Part="1" 
 AR Path="/5FC40E29/5FC58146" Ref="Q5"  Part="1" 
 F 0 "Q5" H 7756 4096 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 7756 4005 50  0000 L CNN
-F 2 "" H 7750 4150 50  0001 C CNN
-F 3 "~" H 7550 4050 50  0001 C CNN
+F 1 "DMP2123L-7" H 7756 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7750 4150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31440.pdf" H 7550 4050 50  0001 C CNN
+F 4 "DMP2123L-7" H 7550 4050 50  0001 C CNN "MFPN"
 	1    7550 4050
 	1    0    0    1   
 $EndComp
@@ -429,8 +430,8 @@ L boringlib:74HC21 U?
 U 2 1 5FC5817F
 P 5500 4300
 AR Path="/5FC5817F" Ref="U?"  Part="1" 
-AR Path="/5FC40E29/5FC5817F" Ref="U6"  Part="2" 
-F 0 "U6" H 5500 4675 50  0000 C CNN
+AR Path="/5FC40E29/5FC5817F" Ref="U7"  Part="2" 
+F 0 "U7" H 5500 4675 50  0000 C CNN
 F 1 "74HC21" H 5500 4584 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5500 4300 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc21.pdf?ts=1603551665027" H 5500 4300 50  0001 C CNN
@@ -447,8 +448,8 @@ L Amplifier_Operational:LM2902 U?
 U 1 1 5FC58189
 P 7800 2000
 AR Path="/5FC58189" Ref="U?"  Part="1" 
-AR Path="/5FC40E29/5FC58189" Ref="U9"  Part="1" 
-F 0 "U9" H 7800 2367 50  0000 C CNN
+AR Path="/5FC40E29/5FC58189" Ref="U10"  Part="1" 
+F 0 "U10" H 7800 2367 50  0000 C CNN
 F 1 "LM2902" H 7800 2250 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7750 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7850 2200 50  0001 C CNN
@@ -512,8 +513,8 @@ L Amplifier_Operational:LM2902 U?
 U 2 1 5FC581AF
 P 6250 1600
 AR Path="/5FC581AF" Ref="U?"  Part="2" 
-AR Path="/5FC40E29/5FC581AF" Ref="U9"  Part="2" 
-F 0 "U9" H 6350 1450 50  0000 C CNN
+AR Path="/5FC40E29/5FC581AF" Ref="U10"  Part="2" 
+F 0 "U10" H 6350 1450 50  0000 C CNN
 F 1 "LM2902" H 6250 1850 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6200 1700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6300 1800 50  0001 C CNN
@@ -573,8 +574,8 @@ L Amplifier_Operational:LM2902 U?
 U 3 1 5FC581D3
 P 2500 2700
 AR Path="/5FC581D3" Ref="U?"  Part="3" 
-AR Path="/5FC40E29/5FC581D3" Ref="U9"  Part="3" 
-F 0 "U9" H 2500 3067 50  0000 C CNN
+AR Path="/5FC40E29/5FC581D3" Ref="U10"  Part="3" 
+F 0 "U10" H 2500 3067 50  0000 C CNN
 F 1 "LM2902" H 2500 2976 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 2800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2550 2900 50  0001 C CNN
@@ -704,8 +705,8 @@ L Amplifier_Operational:LM2902 U?
 U 4 1 5FC7C182
 P 2500 4000
 AR Path="/5FC7C182" Ref="U?"  Part="3" 
-AR Path="/5FC40E29/5FC7C182" Ref="U9"  Part="4" 
-F 0 "U9" H 2500 4367 50  0000 C CNN
+AR Path="/5FC40E29/5FC7C182" Ref="U10"  Part="4" 
+F 0 "U10" H 2500 4367 50  0000 C CNN
 F 1 "LM2902" H 2500 4276 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2450 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2550 4200 50  0001 C CNN
@@ -783,8 +784,8 @@ L Amplifier_Operational:LM2902 U?
 U 5 1 5FC92898
 P 1450 5200
 AR Path="/5FC92898" Ref="U?"  Part="2" 
-AR Path="/5FC40E29/5FC92898" Ref="U9"  Part="5" 
-F 0 "U9" H 1550 5200 50  0000 C CNN
+AR Path="/5FC40E29/5FC92898" Ref="U10"  Part="5" 
+F 0 "U10" H 1550 5200 50  0000 C CNN
 F 1 "LM2902" H 1100 5200 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1400 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 1500 5400 50  0001 C CNN
@@ -924,8 +925,8 @@ L Power_Management:BTS50055-1TMA U?
 U 1 1 5FC580B1
 P 7050 1400
 AR Path="/5FC580B1" Ref="U?"  Part="1" 
-AR Path="/5FC40E29/5FC580B1" Ref="U10"  Part="1" 
-F 0 "U10" H 6850 1650 50  0000 C CNN
+AR Path="/5FC40E29/5FC580B1" Ref="U11"  Part="1" 
+F 0 "U11" H 6850 1650 50  0000 C CNN
 F 1 "BTS50055-1TMA" H 7400 1650 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin4" H 7850 1150 50  0001 C CNN
 F 3 "https://www.infineon.com/dgdl/Infineon-BTS50055-1TMA-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa9b00de935ed" H 7050 1000 50  0001 C CNN

@@ -10,7 +10,7 @@ Date ""
 Rev "A"
 Comp ""
 Comment1 "JKR"
-Comment2 "PLV007"
+Comment2 "PLV007_Yggdrasil"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -37,10 +37,10 @@ $EndSheet
 Text Notes 7650 1800 0    118  ~ 0
 QuantumBeat Slave
 $Comp
-L Interface_CAN_LIN:SN65HVD232 U2
+L Interface_CAN_LIN:SN65HVD232 U3
 U 1 1 5FB5123E
 P 7700 4100
-F 0 "U2" H 7450 4350 50  0000 C CNN
+F 0 "U3" H 7450 4350 50  0000 C CNN
 F 1 "SN65HVD232" H 7350 3750 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7700 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 7600 4500 50  0001 C CNN
@@ -463,10 +463,10 @@ LOAD_SWITCH
 Wire Wire Line
 	6000 7250 5050 7250
 $Comp
-L Sensor:BME280 U1
+L Sensor:BME280 U2
 U 1 1 5FC2E258
 P 7400 5650
-F 0 "U1" H 6971 5696 50  0000 R CNN
+F 0 "U2" H 6971 5696 50  0000 R CNN
 F 1 "BME280" H 6971 5605 50  0000 R CNN
 F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7400 5450 50  0001 C CNN
 F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf" H 7400 5450 50  0001 C CNN
@@ -672,12 +672,12 @@ Connection ~ 9950 5900
 Wire Wire Line
 	9950 5900 9950 5950
 $Comp
-L boringlib:R-78C12-1.0 VR1
+L boringlib:R-78C12-1.0 U1
 U 1 1 5FD31019
 P 3550 1150
-F 0 "VR1" H 3550 1415 50  0000 C CNN
+F 0 "U1" H 3550 1415 50  0000 C CNN
 F 1 "R-78C12-1.0" H 3550 1324 50  0000 C CNN
-F 2 "BoringFootprints:Recom_R-78c-1.0" H 3750 850 50  0001 C CNN
+F 2 "BoringFootprints:Recom_R-78C-1.0" H 3750 850 50  0001 C CNN
 F 3 "https://recom-power.com/pdf/Innoline/R-78C-1.0.pdf" H 3750 850 50  0001 C CNN
 F 4 "R-78C12-1.0" H 3550 1150 50  0001 C CNN "MFPN"
 	1    3550 1150
