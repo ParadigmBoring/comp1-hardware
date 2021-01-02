@@ -227,7 +227,7 @@ P 5200 3000
 F 0 "VR1" H 5200 3315 50  0000 C CNN
 F 1 "Recom_R-78c-1.0" H 5200 3224 50  0000 C CNN
 F 2 "BoringFootprints:Recom_R-78C-1.0" H 5400 2700 50  0001 C CNN
-F 3 "" H 5400 2700 50  0001 C CNN
+F 3 "https://d311uvhi8lkjbj.cloudfront.net/media/Datasheet/pdf/.f91HWzyW/.t321978fcd1ad139cbfa2/Datasheet-260/R-78C-1_0.pdf" H 5400 2700 50  0001 C CNN
 	1    5200 3000
 	1    0    0    -1  
 $EndComp
