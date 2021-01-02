@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -387,6 +387,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model E:/Desktop/430450800.stp
+      (offset (xyz 4.5 4 4))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 -180 0))
     )
   )
 
@@ -1344,6 +1349,11 @@
     (pad 1 thru_hole roundrect (at -1.75 -10.91 180) (size 1.5 1.5) (drill 1.02) (layers *.Cu *.Mask) (roundrect_rratio 0.25)
       (net 2 +5V) (zone_connect 0))
     (pad "" np_thru_hole circle (at 0 0 180) (size 3.05 3.05) (drill 3.05) (layers *.Cu *.Mask))
+    (model E:/Desktop/1723161204.stp
+      (offset (xyz 0 0.45 5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5FECA7A0) (tstamp 5FDAB479)
@@ -3351,8 +3361,8 @@
   (segment (start 63.5 148.59) (end 81.28 148.59) (width 0.5) (layer B.Cu) (net 3))
   (segment (start 82.55 147.32) (end 82.55 143.51) (width 0.5) (layer B.Cu) (net 3))
   (segment (start 81.28 148.59) (end 82.55 147.32) (width 0.5) (layer B.Cu) (net 3))
-  (segment (start 80.01 140.97) (end 75.7925 140.97) (width 0.25) (layer F.Cu) (net 3))
-  (segment (start 82.55 143.51) (end 80.01 140.97) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 80.01 140.97) (end 82.55 143.51) (width 0.5) (layer F.Cu) (net 3))
+  (segment (start 75.7925 140.97) (end 80.01 140.97) (width 0.5) (layer F.Cu) (net 3))
   (segment (start 80.479002 147.32) (end 75.955 147.32) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 83.725001 144.074001) (end 80.479002 147.32) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 83.725001 142.570001) (end 83.725001 144.074001) (width 0.25) (layer F.Cu) (net 4))
