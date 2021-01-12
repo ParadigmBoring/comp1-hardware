@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:PCB_PLV002_Heimdal-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "Heimdal Sensor Interface Board"
 Date ""
 Rev "A"
@@ -1313,51 +1312,6 @@ Connection ~ 8850 2950
 Text HLabel 9700 2950 2    50   Output ~ 0
 ANALOG_IN_10
 $Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5FD20A1B
-P 7100 3900
-F 0 "J?" H 7250 3850 50  0000 C CNN
-F 1 "ANALOG_IN_11" H 7450 3950 50  0000 C CNN
-F 2 "" H 7100 3900 50  0001 C CNN
-F 3 "~" H 7100 3900 50  0001 C CNN
-	1    7100 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD20A25
-P 7350 4050
-F 0 "#PWR?" H 7350 3800 50  0001 C CNN
-F 1 "GND" H 7355 3877 50  0000 C CNN
-F 2 "" H 7350 4050 50  0001 C CNN
-F 3 "" H 7350 4050 50  0001 C CNN
-	1    7350 4050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 4050 7350 4000
-Wire Wire Line
-	7350 4000 7300 4000
-$Comp
-L power:+24V #PWR?
-U 1 1 5FD20A31
-P 7350 3750
-F 0 "#PWR?" H 7350 3600 50  0001 C CNN
-F 1 "+24V" H 7365 3923 50  0000 C CNN
-F 2 "" H 7350 3750 50  0001 C CNN
-F 3 "" H 7350 3750 50  0001 C CNN
-	1    7350 3750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 3750 7350 3800
-Wire Wire Line
-	7350 3800 7300 3800
-Text Label 7300 3900 0    50   ~ 0
-VOLTAGE_IN_11
-Wire Wire Line
-	7800 3900 7300 3900
-$Comp
 L Amplifier_Operational:LM2902 U?
 U 3 1 5FD20A3F
 P 8500 4400
@@ -1368,121 +1322,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8550 4600 50  0001 C CNN
 	3    8500 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 4500 8150 4500
-Wire Wire Line
-	8150 4500 8150 4650
-Wire Wire Line
-	8150 4650 8850 4650
-Wire Wire Line
-	8850 4650 8850 4400
-Wire Wire Line
-	8850 4400 8800 4400
-$Comp
-L Device:R_US R?
-U 1 1 5FD20A4E
-P 7800 4100
-F 0 "R?" H 7868 4146 50  0000 L CNN
-F 1 "100K" H 7868 4055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7840 4090 50  0001 C CNN
-F 3 "~" H 7800 4100 50  0001 C CNN
-	1    7800 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3950 7800 3900
-$Comp
-L Device:R_US R?
-U 1 1 5FD20A59
-P 7800 4500
-F 0 "R?" H 7868 4546 50  0000 L CNN
-F 1 "15.9K" H 7868 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7840 4490 50  0001 C CNN
-F 3 "~" H 7800 4500 50  0001 C CNN
-	1    7800 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 4250 7800 4300
-Wire Wire Line
-	7800 4650 7800 4700
-$Comp
-L power:GND #PWR?
-U 1 1 5FD20A65
-P 7800 4700
-F 0 "#PWR?" H 7800 4450 50  0001 C CNN
-F 1 "GND" H 7805 4527 50  0000 C CNN
-F 2 "" H 7800 4700 50  0001 C CNN
-F 3 "" H 7800 4700 50  0001 C CNN
-	1    7800 4700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 4300 7800 4300
-Connection ~ 7800 4300
-Wire Wire Line
-	7800 4300 7800 4350
-$Comp
-L Device:R_US R?
-U 1 1 5FD20A72
-P 9050 4400
-F 0 "R?" V 8845 4400 50  0000 C CNN
-F 1 "1K" V 8936 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9090 4390 50  0001 C CNN
-F 3 "~" H 9050 4400 50  0001 C CNN
-	1    9050 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8900 4400 8850 4400
-Connection ~ 8850 4400
-Text HLabel 9700 4400 2    50   Output ~ 0
-ANALOG_IN_11
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5FD20A98
-P 7100 5350
-F 0 "J?" H 7250 5300 50  0000 C CNN
-F 1 "ANALOG_IN_12" H 7450 5400 50  0000 C CNN
-F 2 "" H 7100 5350 50  0001 C CNN
-F 3 "~" H 7100 5350 50  0001 C CNN
-	1    7100 5350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD20AA2
-P 7350 5500
-F 0 "#PWR?" H 7350 5250 50  0001 C CNN
-F 1 "GND" H 7355 5327 50  0000 C CNN
-F 2 "" H 7350 5500 50  0001 C CNN
-F 3 "" H 7350 5500 50  0001 C CNN
-	1    7350 5500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5500 7350 5450
-Wire Wire Line
-	7350 5450 7300 5450
-$Comp
-L power:+24V #PWR?
-U 1 1 5FD20AAE
-P 7350 5200
-F 0 "#PWR?" H 7350 5050 50  0001 C CNN
-F 1 "+24V" H 7365 5373 50  0000 C CNN
-F 2 "" H 7350 5200 50  0001 C CNN
-F 3 "" H 7350 5200 50  0001 C CNN
-	1    7350 5200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5200 7350 5250
-Wire Wire Line
-	7350 5250 7300 5250
-Text Label 7300 5350 0    50   ~ 0
-VOLTAGE_IN_12
-Wire Wire Line
-	7800 5350 7300 5350
 $Comp
 L Amplifier_Operational:LM2902 U?
 U 4 1 5FD20ABC
@@ -1494,76 +1333,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8550 6050 50  0001 C CNN
 	4    8500 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 5950 8150 5950
-Wire Wire Line
-	8150 5950 8150 6100
-Wire Wire Line
-	8150 6100 8850 6100
-Wire Wire Line
-	8850 6100 8850 5850
-Wire Wire Line
-	8850 5850 8800 5850
-$Comp
-L Device:R_US R?
-U 1 1 5FD20ACB
-P 7800 5550
-F 0 "R?" H 7868 5596 50  0000 L CNN
-F 1 "100K" H 7868 5505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7840 5540 50  0001 C CNN
-F 3 "~" H 7800 5550 50  0001 C CNN
-	1    7800 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 5400 7800 5350
-$Comp
-L Device:R_US R?
-U 1 1 5FD20AD6
-P 7800 5950
-F 0 "R?" H 7868 5996 50  0000 L CNN
-F 1 "15.9K" H 7868 5905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7840 5940 50  0001 C CNN
-F 3 "~" H 7800 5950 50  0001 C CNN
-	1    7800 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 5700 7800 5750
-Wire Wire Line
-	7800 6100 7800 6150
-$Comp
-L power:GND #PWR?
-U 1 1 5FD20AE2
-P 7800 6150
-F 0 "#PWR?" H 7800 5900 50  0001 C CNN
-F 1 "GND" H 7805 5977 50  0000 C CNN
-F 2 "" H 7800 6150 50  0001 C CNN
-F 3 "" H 7800 6150 50  0001 C CNN
-	1    7800 6150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 5750 7800 5750
-Connection ~ 7800 5750
-Wire Wire Line
-	7800 5750 7800 5800
-$Comp
-L Device:R_US R?
-U 1 1 5FD20AEF
-P 9050 5850
-F 0 "R?" V 8845 5850 50  0000 C CNN
-F 1 "1K" V 8936 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9090 5840 50  0001 C CNN
-F 3 "~" H 9050 5850 50  0001 C CNN
-	1    9050 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8900 5850 8850 5850
-Connection ~ 8850 5850
-Text HLabel 9700 5850 2    50   Output ~ 0
-ANALOG_IN_12
 $Comp
 L Amplifier_Operational:LM2902 U?
 U 5 1 5FD55832
@@ -2024,10 +1793,6 @@ Connection ~ 9650 1500
 Wire Wire Line
 	9650 1500 9700 1500
 Wire Wire Line
-	9200 5850 9250 5850
-Wire Wire Line
-	9200 4400 9250 4400
-Wire Wire Line
 	9200 2950 9250 2950
 $Comp
 L Device:C C?
@@ -2081,110 +1846,6 @@ Wire Wire Line
 Connection ~ 9650 2950
 Wire Wire Line
 	9650 2950 9700 2950
-$Comp
-L Device:C C?
-U 1 1 5FEF46B5
-P 9250 4600
-F 0 "C?" H 9365 4646 50  0000 L CNN
-F 1 "0.1uF" H 9365 4555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9288 4450 50  0001 C CNN
-F 3 "~" H 9250 4600 50  0001 C CNN
-	1    9250 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 4400 9250 4450
-Wire Wire Line
-	9250 4750 9250 4800
-$Comp
-L power:GND #PWR?
-U 1 1 5FEF46BD
-P 9650 4850
-F 0 "#PWR?" H 9650 4600 50  0001 C CNN
-F 1 "GND" H 9655 4677 50  0000 C CNN
-F 2 "" H 9650 4850 50  0001 C CNN
-F 3 "" H 9650 4850 50  0001 C CNN
-	1    9650 4850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5FEF46C3
-P 9650 4600
-F 0 "D?" V 9604 4679 50  0000 L CNN
-F 1 "3.3V" V 9695 4679 50  0000 L CNN
-F 2 "" H 9650 4600 50  0001 C CNN
-F 3 "~" H 9650 4600 50  0001 C CNN
-	1    9650 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9650 4450 9650 4400
-Wire Wire Line
-	9650 4750 9650 4800
-Wire Wire Line
-	9650 4800 9250 4800
-Connection ~ 9650 4800
-Wire Wire Line
-	9650 4800 9650 4850
-$Comp
-L Device:C C?
-U 1 1 5FF09E43
-P 9250 6050
-F 0 "C?" H 9365 6096 50  0000 L CNN
-F 1 "0.1uF" H 9365 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9288 5900 50  0001 C CNN
-F 3 "~" H 9250 6050 50  0001 C CNN
-	1    9250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 5850 9250 5900
-Wire Wire Line
-	9250 6200 9250 6250
-$Comp
-L power:GND #PWR?
-U 1 1 5FF09E4B
-P 9650 6300
-F 0 "#PWR?" H 9650 6050 50  0001 C CNN
-F 1 "GND" H 9655 6127 50  0000 C CNN
-F 2 "" H 9650 6300 50  0001 C CNN
-F 3 "" H 9650 6300 50  0001 C CNN
-	1    9650 6300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5FF09E51
-P 9650 6050
-F 0 "D?" V 9604 6129 50  0000 L CNN
-F 1 "3.3V" V 9695 6129 50  0000 L CNN
-F 2 "" H 9650 6050 50  0001 C CNN
-F 3 "~" H 9650 6050 50  0001 C CNN
-	1    9650 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9650 5900 9650 5850
-Wire Wire Line
-	9650 6200 9650 6250
-Wire Wire Line
-	9650 6250 9250 6250
-Connection ~ 9650 6250
-Wire Wire Line
-	9650 6250 9650 6300
-Connection ~ 9650 5850
-Wire Wire Line
-	9650 5850 9700 5850
-Connection ~ 9250 5850
-Wire Wire Line
-	9250 5850 9650 5850
-Connection ~ 9250 4400
-Wire Wire Line
-	9250 4400 9650 4400
-Connection ~ 9650 4400
-Wire Wire Line
-	9650 4400 9700 4400
 $Comp
 L power:+5V #PWR?
 U 1 1 5FF56BC0
