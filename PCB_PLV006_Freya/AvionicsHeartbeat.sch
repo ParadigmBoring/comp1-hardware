@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PCB_PLV006_Freya-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -409,7 +409,7 @@ F 3 "" H 3200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC08 U3
+L PCB_PLV006_Freya-rescue:74HC08-boringlib U3
 U 1 1 5F9890B3
 P 3900 3250
 AR Path="/5F9890B3" Ref="U3"  Part="1" 
@@ -423,7 +423,7 @@ F 4 "296-14506-1-ND" H 3900 3250 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC08 U3
+L PCB_PLV006_Freya-rescue:74HC08-boringlib U3
 U 2 1 5F98DD9A
 P 5000 3350
 AR Path="/5F98DD9A" Ref="U3"  Part="2" 
@@ -437,7 +437,7 @@ F 4 "296-14506-1-ND" H 5000 3350 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC08 U3
+L PCB_PLV006_Freya-rescue:74HC08-boringlib U3
 U 5 1 5F99254E
 P 2450 1350
 AR Path="/5F99254E" Ref="U3"  Part="5" 

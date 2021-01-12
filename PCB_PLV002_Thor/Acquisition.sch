@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:PCB_PLV002_Thor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "Thor Sensor/Actuator Interface Board"
 Date ""
 Rev "A"
