@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L boringlib:74HC21 U1
+L PCB_PLV006_Freya-rescue:74HC21-boringlib U1
 U 1 1 5F953590
 P 3200 3150
+AR Path="/5F953590" Ref="U1"  Part="1" 
+AR Path="/5F94F01A/5F953590" Ref="U1"  Part="1" 
 F 0 "U1" H 3200 3525 50  0000 C CNN
 F 1 "74HC21" H 3200 3434 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3150 50  0001 C CNN
@@ -27,9 +29,11 @@ F 4 "296-31574-1-ND" H 3200 3150 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC21 U1
+L PCB_PLV006_Freya-rescue:74HC21-boringlib U1
 U 2 1 5F9550C5
 P 3200 3800
+AR Path="/5F9550C5" Ref="U1"  Part="2" 
+AR Path="/5F94F01A/5F9550C5" Ref="U1"  Part="2" 
 F 0 "U1" H 3200 4175 50  0000 C CNN
 F 1 "74HC21" H 3200 4084 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 3800 50  0001 C CNN
@@ -39,9 +43,11 @@ F 4 "296-31574-1-ND" H 3200 3800 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:74HC21 U1
+L PCB_PLV006_Freya-rescue:74HC21-boringlib U1
 U 3 1 5F956B40
 P 900 1350
+AR Path="/5F956B40" Ref="U1"  Part="3" 
+AR Path="/5F94F01A/5F956B40" Ref="U1"  Part="3" 
 F 0 "U1" H 1130 1396 50  0000 L CNN
 F 1 "74HC21" H 1130 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 900 1350 50  0001 C CNN
@@ -347,9 +353,11 @@ Connection ~ 1800 6150
 Wire Wire Line
 	1800 6150 3050 6150
 $Comp
-L boringlib:74HC21 U4
+L PCB_PLV006_Freya-rescue:74HC21-boringlib U4
 U 1 1 5F9A3A97
 P 4250 5100
+AR Path="/5F9A3A97" Ref="U4"  Part="1" 
+AR Path="/5F94F01A/5F9A3A97" Ref="U4"  Part="1" 
 F 0 "U4" H 4250 5475 50  0000 C CNN
 F 1 "74HC21" H 4250 5384 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 5100 50  0001 C CNN
@@ -685,9 +693,11 @@ Connection ~ 7550 3750
 Wire Wire Line
 	7550 3750 7550 3800
 $Comp
-L boringlib:74HC21 U4
+L PCB_PLV006_Freya-rescue:74HC21-boringlib U4
 U 3 1 5FA1BD3A
 P 3200 1350
+AR Path="/5FA1BD3A" Ref="U4"  Part="3" 
+AR Path="/5F94F01A/5FA1BD3A" Ref="U4"  Part="3" 
 F 0 "U4" H 3430 1396 50  0000 L CNN
 F 1 "74HC21" H 3430 1305 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1350 50  0001 C CNN
