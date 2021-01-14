@@ -1,0 +1,239 @@
+EESchema Schematic File Version 4
+LIBS:PCB_PLV006_Freya-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Freya Flight Computer Carrier"
+Date ""
+Rev "A"
+Comp ""
+Comment1 "JKR"
+Comment2 "PLV006_Freya"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x12 J5
+U 1 1 60361B6C
+P 1050 1450
+F 0 "J5" H 1200 1400 50  0000 C CNN
+F 1 "NAV" H 1200 1500 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal" H 1050 1450 50  0001 C CNN
+F 3 "~" H 1050 1450 50  0001 C CNN
+	1    1050 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 1850 1300 1850
+Wire Wire Line
+	1300 1850 1300 1950
+Wire Wire Line
+	1300 1950 1250 1950
+Wire Wire Line
+	1300 1950 1300 2000
+Connection ~ 1300 1950
+$Comp
+L power:GND #PWR0148
+U 1 1 60364D79
+P 1300 2000
+F 0 "#PWR0148" H 1300 1750 50  0001 C CNN
+F 1 "GND" H 1305 1827 50  0000 C CNN
+F 2 "" H 1300 2000 50  0001 C CNN
+F 3 "" H 1300 2000 50  0001 C CNN
+	1    1300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0149
+U 1 1 60365736
+P 1650 1600
+F 0 "#PWR0149" H 1650 1450 50  0001 C CNN
+F 1 "+24V" H 1665 1773 50  0000 C CNN
+F 2 "" H 1650 1600 50  0001 C CNN
+F 3 "" H 1650 1600 50  0001 C CNN
+	1    1650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1600 1650 1650
+Wire Wire Line
+	1650 1750 1250 1750
+Wire Wire Line
+	1250 1650 1650 1650
+Connection ~ 1650 1650
+Wire Wire Line
+	1650 1650 1650 1750
+NoConn ~ 1250 850 
+Text HLabel 1300 1550 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	1300 1550 1250 1550
+Text HLabel 1300 1450 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	1300 1450 1250 1450
+Text HLabel 1300 1350 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_1
+Text HLabel 1300 1250 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_2
+Text HLabel 1300 1150 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_3
+Text HLabel 1300 1050 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_4
+Wire Wire Line
+	1300 1050 1250 1050
+Wire Wire Line
+	1250 1150 1300 1150
+Wire Wire Line
+	1300 1250 1250 1250
+Wire Wire Line
+	1250 1350 1300 1350
+Text HLabel 1300 950  2    50   Input ~ 0
+QB
+Wire Wire Line
+	1300 950  1250 950 
+$Comp
+L Connector_Generic:Conn_01x12 J6
+U 1 1 6036B84A
+P 1050 2950
+F 0 "J6" H 1200 2900 50  0000 C CNN
+F 1 "SENSE/ACT" H 1350 3000 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal" H 1050 2950 50  0001 C CNN
+F 3 "~" H 1050 2950 50  0001 C CNN
+	1    1050 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3350 1300 3350
+Wire Wire Line
+	1300 3350 1300 3450
+Wire Wire Line
+	1300 3450 1250 3450
+Wire Wire Line
+	1300 3450 1300 3500
+Connection ~ 1300 3450
+$Comp
+L power:GND #PWR0150
+U 1 1 6036B859
+P 1300 3500
+F 0 "#PWR0150" H 1300 3250 50  0001 C CNN
+F 1 "GND" H 1305 3327 50  0000 C CNN
+F 2 "" H 1300 3500 50  0001 C CNN
+F 3 "" H 1300 3500 50  0001 C CNN
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0151
+U 1 1 6036B863
+P 1650 3100
+F 0 "#PWR0151" H 1650 2950 50  0001 C CNN
+F 1 "+24V" H 1665 3273 50  0000 C CNN
+F 2 "" H 1650 3100 50  0001 C CNN
+F 3 "" H 1650 3100 50  0001 C CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3100 1650 3150
+Wire Wire Line
+	1650 3250 1250 3250
+Wire Wire Line
+	1250 3150 1650 3150
+Connection ~ 1650 3150
+Wire Wire Line
+	1650 3150 1650 3250
+NoConn ~ 1250 2350
+Text HLabel 1300 3050 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	1300 3050 1250 3050
+Text HLabel 1300 2950 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	1300 2950 1250 2950
+Text HLabel 1300 2850 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_1
+Text HLabel 1300 2750 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_2
+Text HLabel 1300 2650 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_3
+Text HLabel 1300 2550 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_4
+Wire Wire Line
+	1300 2550 1250 2550
+Wire Wire Line
+	1250 2650 1300 2650
+Wire Wire Line
+	1300 2750 1250 2750
+Wire Wire Line
+	1250 2850 1300 2850
+Text HLabel 1300 2450 2    50   Input ~ 0
+QB
+Wire Wire Line
+	1300 2450 1250 2450
+$Comp
+L Connector_Generic:Conn_01x08 J7
+U 1 1 60371C0B
+P 2950 1200
+F 0 "J7" H 3100 1150 50  0000 C CNN
+F 1 "QBI" H 3100 1250 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0800_2x04_P3.00mm_Horizontal" H 2950 1200 50  0001 C CNN
+F 3 "~" H 2950 1200 50  0001 C CNN
+	1    2950 1200
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3150 800 
+$Comp
+L power:GND #PWR0152
+U 1 1 603744E4
+P 3200 1550
+F 0 "#PWR0152" H 3200 1300 50  0001 C CNN
+F 1 "GND" H 3205 1377 50  0000 C CNN
+F 2 "" H 3200 1550 50  0001 C CNN
+F 3 "" H 3200 1550 50  0001 C CNN
+	1    3200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1550 3200 1500
+Wire Wire Line
+	3200 1500 3150 1500
+Wire Wire Line
+	3150 1400 4250 1400
+Wire Wire Line
+	4250 1400 4250 1350
+$Comp
+L power:+24V #PWR0153
+U 1 1 60375959
+P 4250 1350
+F 0 "#PWR0153" H 4250 1200 50  0001 C CNN
+F 1 "+24V" H 4265 1523 50  0000 C CNN
+F 2 "" H 4250 1350 50  0001 C CNN
+F 3 "" H 4250 1350 50  0001 C CNN
+	1    4250 1350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 1300 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_1
+Text HLabel 3200 1200 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_2
+Text HLabel 3200 1100 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_3
+Text HLabel 3200 1000 2    50   Input ~ 0
+HEARTBEAT_ADDRESS_4
+Wire Wire Line
+	3200 1300 3150 1300
+Wire Wire Line
+	3150 1200 3200 1200
+Wire Wire Line
+	3200 1100 3150 1100
+Wire Wire Line
+	3150 1000 3200 1000
+Text HLabel 3200 900  2    50   Input ~ 0
+QB
+Wire Wire Line
+	3200 900  3150 900 
+$EndSCHEMATC

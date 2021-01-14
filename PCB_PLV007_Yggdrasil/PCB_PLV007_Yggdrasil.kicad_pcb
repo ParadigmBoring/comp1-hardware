@@ -3810,6 +3810,11 @@
     (pad "" np_thru_hole circle (at 55.88 -48.26) (size 4.5 4.5) (drill 3.2) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 7.62 -47.87) (size 4.5 4.5) (drill 3.2) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 40.68 2.54) (size 4.5 4.5) (drill 3.2) (layers *.Cu *.Mask))
+    (model "${KIPARADIGMMOD}/boringlib/3dModels/NUCLEO NODE ASSEMBLY.STEP"
+      (offset (xyz 40.5 -2.5 9.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23_Handsoldering (layer F.Cu) (tedit 5A0AB76C) (tstamp 5FEAB450)

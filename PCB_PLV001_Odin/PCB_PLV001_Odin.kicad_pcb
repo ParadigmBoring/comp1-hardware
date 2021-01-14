@@ -3526,6 +3526,11 @@
       (net 32 /HEARTBEAT_ADDRESS_2))
     (pad 1 thru_hole circle (at 0 -45.72) (size 1.75 1.75) (drill 1.016) (layers *.Cu *.Mask)
       (net 31 /HEARTBEAT_ADDRESS_1))
+    (model "${KIPARADIGMMOD}/boringlib/3dModels/NUCLEO NODE ASSEMBLY.STEP"
+      (offset (xyz 40.5 -2.5 9.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FE19DFD)
@@ -5631,7 +5636,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430451200/430451200.stp
+    (model ${KIPARADIGMMOD}/boringlib/3dModels/MOLEX_430451200/430451200.stp
       (offset (xyz 7.5 4 4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
@@ -5692,7 +5697,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPARDIGMMOD}/boringlib/3dModels/436500500.stp
+    (model ${KIPARADIGMMOD}/boringlib/3dModels/436500500.stp
       (offset (xyz 6 4 2.5))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
@@ -5753,7 +5758,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPARDIGMMOD}/boringlib/3dModels/436500500.stp
+    (model ${KIPARADIGMMOD}/boringlib/3dModels/436500500.stp
       (offset (xyz 6 4 2.5))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
@@ -5814,7 +5819,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
+    (model ${KIPARADIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
       (offset (xyz 3 4 4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
@@ -5875,7 +5880,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPARDIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
+    (model ${KIPARADIGMMOD}/boringlib/3dModels/MOLEX_430450600/430450600.stp
       (offset (xyz 3 4 4))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 180))
