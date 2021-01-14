@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:PCB_PLV002_Thor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "Thor Sensor/Actuator Interface Board"
 Date ""
 Rev "A"
@@ -94,7 +94,7 @@ L Connector_Generic:Conn_01x03 J19
 U 1 1 5FFD06F6
 P 9450 5900
 F 0 "J19" H 9600 5850 50  0000 C CNN
-F 1 "TACH_2" H 9700 5950 50  0000 C CNN
+F 1 "TACH_2" H 9650 5950 50  0000 C CNN
 F 2 "" H 9450 5900 50  0001 C CNN
 F 3 "~" H 9450 5900 50  0001 C CNN
 	1    9450 5900
@@ -2114,4 +2114,182 @@ F 3 "" H 8400 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8400 3300 8400 3350
+$Comp
+L Amplifier_Operational:LM2902 U7
+U 1 1 6019C49E
+P 4750 6300
+F 0 "U7" H 4750 6667 50  0000 C CNN
+F 1 "LM2902" H 4750 6576 50  0000 C CNN
+F 2 "" H 4700 6400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4800 6500 50  0001 C CNN
+	1    4750 6300
+	1    0    0    -1  
+$EndComp
+Text Label 3850 6400 0    50   ~ 0
+FLAMM_1
+Wire Wire Line
+	3850 6400 4450 6400
+$Comp
+L Device:R_US R44
+U 1 1 601C9D1F
+P 3050 5350
+F 0 "R44" H 3118 5396 50  0000 L CNN
+F 1 "10K" H 3118 5305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3090 5340 50  0001 C CNN
+F 3 "~" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R43
+U 1 1 601CADBF
+P 3050 4950
+F 0 "R43" H 3118 4996 50  0000 L CNN
+F 1 "10K" H 3118 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3090 4940 50  0001 C CNN
+F 3 "~" H 3050 4950 50  0001 C CNN
+	1    3050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5100 3050 5150
+Wire Wire Line
+	3050 5150 3700 5150
+Connection ~ 3050 5150
+Wire Wire Line
+	3050 5150 3050 5200
+$Comp
+L power:+5V #PWR039
+U 1 1 601FFDEC
+P 3050 4750
+F 0 "#PWR039" H 3050 4600 50  0001 C CNN
+F 1 "+5V" H 3050 4900 50  0000 C CNN
+F 2 "" H 3050 4750 50  0001 C CNN
+F 3 "" H 3050 4750 50  0001 C CNN
+	1    3050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4750 3050 4800
+$Comp
+L power:GND #PWR042
+U 1 1 60227751
+P 3050 5550
+F 0 "#PWR042" H 3050 5300 50  0001 C CNN
+F 1 "GND" H 3055 5377 50  0000 C CNN
+F 2 "" H 3050 5550 50  0001 C CNN
+F 3 "" H 3050 5550 50  0001 C CNN
+	1    3050 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5500 3050 5550
+Text Label 3700 5150 2    50   ~ 0
+FLAMM_THRESH
+Text Label 3850 6200 0    50   ~ 0
+FLAMM_THRESH
+Wire Wire Line
+	3850 6200 4450 6200
+$Comp
+L Amplifier_Operational:LM2902 U7
+U 2 1 602CC7F5
+P 4750 6950
+F 0 "U7" H 4750 7317 50  0000 C CNN
+F 1 "LM2902" H 4750 7226 50  0000 C CNN
+F 2 "" H 4700 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4800 7150 50  0001 C CNN
+	2    4750 6950
+	1    0    0    -1  
+$EndComp
+Text Label 3850 7050 0    50   ~ 0
+FLAMM_2
+Wire Wire Line
+	3850 7050 4450 7050
+Text Label 3850 6850 0    50   ~ 0
+FLAMM_THRESH
+Wire Wire Line
+	3850 6850 4450 6850
+$Comp
+L Amplifier_Operational:LM2902 U7
+U 5 1 602EB406
+P 2700 5200
+F 0 "U7" H 2658 5246 50  0000 L CNN
+F 1 "LM2902" H 2658 5155 50  0000 L CNN
+F 2 "" H 2650 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2750 5400 50  0001 C CNN
+	5    2700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR040
+U 1 1 602F01C5
+P 2600 4850
+F 0 "#PWR040" H 2600 4700 50  0001 C CNN
+F 1 "+5V" H 2600 5000 50  0000 C CNN
+F 2 "" H 2600 4850 50  0001 C CNN
+F 3 "" H 2600 4850 50  0001 C CNN
+	1    2600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4850 2600 4900
+Wire Wire Line
+	2600 5500 2600 5550
+$Comp
+L power:GND #PWR041
+U 1 1 6030D728
+P 2600 5550
+F 0 "#PWR041" H 2600 5300 50  0001 C CNN
+F 1 "GND" H 2605 5377 50  0000 C CNN
+F 2 "" H 2600 5550 50  0001 C CNN
+F 3 "" H 2600 5550 50  0001 C CNN
+	1    2600 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6400 2600 6450
+$Comp
+L power:GND #PWR044
+U 1 1 60337E3C
+P 2600 6450
+F 0 "#PWR044" H 2600 6200 50  0001 C CNN
+F 1 "GND" H 2605 6277 50  0000 C CNN
+F 2 "" H 2600 6450 50  0001 C CNN
+F 3 "" H 2600 6450 50  0001 C CNN
+	1    2600 6450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6050 2600 6100
+$Comp
+L Device:C C12
+U 1 1 60337E48
+P 2600 6250
+F 0 "C12" H 2715 6296 50  0000 L CNN
+F 1 "0.1uF" H 2715 6205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2638 6100 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2600 6250 50  0001 C CNN
+F 4 "CC0603KRX7R8BB104" H 850 550 50  0001 C CNN "MFPN"
+	1    2600 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR043
+U 1 1 60348105
+P 2600 6050
+F 0 "#PWR043" H 2600 5900 50  0001 C CNN
+F 1 "+5V" H 2600 6200 50  0000 C CNN
+F 2 "" H 2600 6050 50  0001 C CNN
+F 3 "" H 2600 6050 50  0001 C CNN
+	1    2600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6300 5050 6300
+Wire Wire Line
+	5050 6950 5100 6950
+Text HLabel 5100 6300 2    50   Output ~ 0
+FLAMM_SAFE_1
+Text HLabel 5100 6950 2    50   Output ~ 0
+FLAMM_SAFE_2
 $EndSCHEMATC

@@ -1,15 +1,16 @@
 EESchema Schematic File Version 4
+LIBS:PCB_PLV002_Thor-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
-Title "Heimdal Sensor Interface Board"
+Title "Thor Sensor/Actuator Interface Board"
 Date ""
 Rev "A"
 Comp ""
-Comment1 "JKR"
-Comment2 "PLV007"
+Comment1 "RS+JR"
+Comment2 "PLV002"
 Comment3 ""
 Comment4 ""
 $EndDescr

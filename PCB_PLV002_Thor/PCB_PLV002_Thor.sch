@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PCB_PLV002_Thor-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -863,31 +864,33 @@ F9 "DOUT" O R 9350 2350 50
 F10 "DIN" I R 9350 2450 50 
 F11 "nCS_1" I R 9350 2550 50 
 F12 "nCS_2" I R 9350 2650 50 
+F13 "FLAMM_SAFE_1" O L 7450 2900 50 
+F14 "FLAMM_SAFE_2" O L 7450 3000 50 
 $EndSheet
-Text Label 7100 2450 0    50   ~ 0
+Text Label 7000 2450 0    50   ~ 0
 TEMP_1
 Wire Wire Line
-	7100 2450 7450 2450
-Text Label 7100 2550 0    50   ~ 0
+	7000 2450 7450 2450
+Text Label 7000 2550 0    50   ~ 0
 TEMP_2
-Text Label 7100 2650 0    50   ~ 0
+Text Label 7000 2650 0    50   ~ 0
 TEMP_3
-Text Label 7100 2750 0    50   ~ 0
+Text Label 7000 2750 0    50   ~ 0
 TEMP_4
 Wire Wire Line
-	7100 2750 7450 2750
+	7000 2750 7450 2750
 Wire Wire Line
-	7450 2650 7100 2650
+	7450 2650 7000 2650
 Wire Wire Line
-	7100 2550 7450 2550
-Text Label 7100 2250 0    50   ~ 0
+	7000 2550 7450 2550
+Text Label 7000 2250 0    50   ~ 0
 TACH_1
-Text Label 7100 2350 0    50   ~ 0
+Text Label 7000 2350 0    50   ~ 0
 TACH_2
 Wire Wire Line
-	7100 2250 7450 2250
+	7000 2250 7450 2250
 Wire Wire Line
-	7450 2350 7100 2350
+	7450 2350 7000 2350
 Text Label 900  4000 0    50   ~ 0
 TEMP_1
 Text Label 900  4100 0    50   ~ 0
@@ -896,48 +899,48 @@ Text Label 900  4600 0    50   ~ 0
 TEMP_3
 Text Label 900  4700 0    50   ~ 0
 TEMP_4
-Text Label 9750 2250 2    50   ~ 0
+Text Label 9800 2250 2    50   ~ 0
 SPI_SCLK
 Wire Wire Line
-	9750 2250 9350 2250
+	9800 2250 9350 2250
 Wire Wire Line
-	9350 2350 9750 2350
+	9350 2350 9800 2350
 Wire Wire Line
-	9750 2450 9350 2450
+	9800 2450 9350 2450
 Wire Wire Line
-	9350 2550 9750 2550
+	9350 2550 9800 2550
 Wire Wire Line
-	9750 2650 9350 2650
-Text Label 9750 2350 2    50   ~ 0
+	9800 2650 9350 2650
+Text Label 9800 2350 2    50   ~ 0
 SPI_MOSI
-Text Label 9750 2450 2    50   ~ 0
+Text Label 9800 2450 2    50   ~ 0
 SPI_MISO
-Text Label 9750 2550 2    50   ~ 0
+Text Label 9800 2550 2    50   ~ 0
 ADC1_nCS
-Text Label 9750 2650 2    50   ~ 0
+Text Label 9800 2650 2    50   ~ 0
 ADC2_nCS
 Wire Wire Line
 	6100 1250 6050 1250
 Connection ~ 6050 1250
-Text Label 5450 5650 2    50   ~ 0
+Text Label 5500 5650 2    50   ~ 0
 SPI_SCLK
 Wire Wire Line
-	5450 5650 5050 5650
+	5500 5650 5050 5650
 Wire Wire Line
-	5050 5850 5450 5850
+	5050 5850 5500 5850
 Wire Wire Line
-	5450 5750 5050 5750
-Text Label 5450 5850 2    50   ~ 0
+	5500 5750 5050 5750
+Text Label 5500 5850 2    50   ~ 0
 SPI_MOSI
-Text Label 5450 5750 2    50   ~ 0
+Text Label 5500 5750 2    50   ~ 0
 SPI_MISO
 Wire Wire Line
-	5050 5450 5450 5450
+	5050 5450 5500 5450
 Wire Wire Line
-	5450 5550 5050 5550
-Text Label 5450 5450 2    50   ~ 0
+	5500 5550 5050 5550
+Text Label 5500 5450 2    50   ~ 0
 ADC1_nCS
-Text Label 5450 5550 2    50   ~ 0
+Text Label 5500 5550 2    50   ~ 0
 ADC2_nCS
 Wire Wire Line
 	5500 1250 5650 1250
@@ -986,4 +989,370 @@ F31 "Actuation_Input24" I R 9350 4250 50
 F32 "Actuation_Enable7" I R 9350 5000 50 
 F33 "Actuation_Enable8" I R 9350 5100 50 
 $EndSheet
+Text Label 7000 3550 0    50   ~ 0
+ACT_IN_1
+Wire Wire Line
+	7000 3550 7450 3550
+Text Label 7000 3650 0    50   ~ 0
+ACT_IN_2
+Wire Wire Line
+	7000 3650 7450 3650
+Text Label 7000 3750 0    50   ~ 0
+ACT_IN_3
+Wire Wire Line
+	7000 3750 7450 3750
+Text Label 7000 3850 0    50   ~ 0
+ACT_IN_4
+Wire Wire Line
+	7000 3850 7450 3850
+Text Label 7000 3950 0    50   ~ 0
+ACT_IN_5
+Wire Wire Line
+	7000 3950 7450 3950
+Text Label 7000 4050 0    50   ~ 0
+ACT_IN_6
+Wire Wire Line
+	7000 4050 7450 4050
+Text Label 7000 4150 0    50   ~ 0
+ACT_IN_7
+Wire Wire Line
+	7000 4150 7450 4150
+Text Label 7000 4250 0    50   ~ 0
+ACT_IN_8
+Wire Wire Line
+	7000 4250 7450 4250
+Text Label 7000 4350 0    50   ~ 0
+ACT_IN_9
+Wire Wire Line
+	7000 4350 7450 4350
+Text Label 7000 4450 0    50   ~ 0
+ACT_IN_10
+Wire Wire Line
+	7000 4450 7450 4450
+Text Label 7000 4550 0    50   ~ 0
+ACT_IN_11
+Wire Wire Line
+	7000 4550 7450 4550
+Text Label 7000 4650 0    50   ~ 0
+ACT_IN_12
+Wire Wire Line
+	7000 4650 7450 4650
+Text Label 7000 4750 0    50   ~ 0
+ACT_IN_13
+Wire Wire Line
+	7000 4750 7450 4750
+Text Label 7000 4850 0    50   ~ 0
+ACT_IN_14
+Wire Wire Line
+	7000 4850 7450 4850
+Text Label 7000 4950 0    50   ~ 0
+ACT_IN_15
+Wire Wire Line
+	7000 4950 7450 4950
+Text Label 7000 5050 0    50   ~ 0
+ACT_IN_16
+Wire Wire Line
+	7000 5050 7450 5050
+Text Label 9800 3550 2    50   ~ 0
+ACT_IN_17
+Wire Wire Line
+	9350 3550 9800 3550
+Text Label 9800 3650 2    50   ~ 0
+ACT_IN_18
+Wire Wire Line
+	9350 3650 9800 3650
+Text Label 9800 3750 2    50   ~ 0
+ACT_IN_19
+Wire Wire Line
+	9350 3750 9800 3750
+Text Label 9800 3850 2    50   ~ 0
+ACT_IN_20
+Wire Wire Line
+	9350 3850 9800 3850
+Text Label 9800 3950 2    50   ~ 0
+ACT_IN_21
+Wire Wire Line
+	9350 3950 9800 3950
+Text Label 9800 4050 2    50   ~ 0
+ACT_IN_22
+Wire Wire Line
+	9350 4050 9800 4050
+Text Label 9800 4150 2    50   ~ 0
+ACT_IN_23
+Wire Wire Line
+	9350 4150 9800 4150
+Text Label 9800 4250 2    50   ~ 0
+ACT_IN_24
+Wire Wire Line
+	9350 4250 9800 4250
+Text Label 9800 4400 2    50   ~ 0
+ACT_EN_1
+Wire Wire Line
+	9350 4400 9800 4400
+Wire Wire Line
+	9350 4500 9800 4500
+Wire Wire Line
+	9350 4600 9800 4600
+Wire Wire Line
+	9350 4700 9800 4700
+Wire Wire Line
+	9350 4800 9800 4800
+Wire Wire Line
+	9350 4900 9800 4900
+Wire Wire Line
+	9350 5000 9800 5000
+Wire Wire Line
+	9350 5100 9800 5100
+Text Label 9800 4500 2    50   ~ 0
+ACT_EN_2
+Text Label 9800 4600 2    50   ~ 0
+ACT_EN_3
+Text Label 9800 4700 2    50   ~ 0
+ACT_EN_4
+Text Label 9800 4800 2    50   ~ 0
+ACT_EN_5
+Text Label 9800 4900 2    50   ~ 0
+ACT_EN_6
+Text Label 9800 5000 2    50   ~ 0
+ACT_EN_7
+Text Label 9800 5100 2    50   ~ 0
+ACT_EN_8
+Text Label 5500 7500 2    50   ~ 0
+ACT_IN_1
+Wire Wire Line
+	5500 7500 5050 7500
+Text Label 5500 7400 2    50   ~ 0
+ACT_IN_2
+Wire Wire Line
+	5500 7400 5050 7400
+Text Label 5500 7300 2    50   ~ 0
+ACT_IN_3
+Wire Wire Line
+	5500 7300 5050 7300
+Text Label 5500 7200 2    50   ~ 0
+ACT_IN_4
+Wire Wire Line
+	5500 7200 5050 7200
+Text Label 5500 7100 2    50   ~ 0
+ACT_IN_5
+Wire Wire Line
+	5500 7100 5050 7100
+Text Label 5500 7000 2    50   ~ 0
+ACT_IN_6
+Wire Wire Line
+	5500 7000 5050 7000
+Text Label 5500 6900 2    50   ~ 0
+ACT_IN_7
+Wire Wire Line
+	5500 6900 5050 6900
+Text Label 5500 6800 2    50   ~ 0
+ACT_IN_8
+Wire Wire Line
+	5500 6800 5050 6800
+Text Label 5500 6700 2    50   ~ 0
+ACT_IN_9
+Wire Wire Line
+	5500 6700 5050 6700
+Text Label 5500 6600 2    50   ~ 0
+ACT_IN_10
+Wire Wire Line
+	5500 6600 5050 6600
+Text Label 5500 6500 2    50   ~ 0
+ACT_IN_11
+Wire Wire Line
+	5500 6500 5050 6500
+Text Label 5500 6400 2    50   ~ 0
+ACT_IN_12
+Wire Wire Line
+	5500 6400 5050 6400
+Text Label 5500 6300 2    50   ~ 0
+ACT_IN_13
+Wire Wire Line
+	5500 6300 5050 6300
+Text Label 5500 6200 2    50   ~ 0
+ACT_IN_14
+Wire Wire Line
+	5500 6200 5050 6200
+Text Label 5500 6100 2    50   ~ 0
+ACT_IN_15
+Wire Wire Line
+	5500 6100 5050 6100
+Text Label 5500 6000 2    50   ~ 0
+ACT_IN_16
+Wire Wire Line
+	5500 6000 5050 6000
+Text Label 5500 4650 2    50   ~ 0
+ACT_IN_17
+Wire Wire Line
+	5050 4650 5500 4650
+Text Label 5500 4750 2    50   ~ 0
+ACT_IN_18
+Wire Wire Line
+	5050 4750 5500 4750
+Text Label 5500 4850 2    50   ~ 0
+ACT_IN_19
+Wire Wire Line
+	5050 4850 5500 4850
+Text Label 5500 4950 2    50   ~ 0
+ACT_IN_20
+Wire Wire Line
+	5050 4950 5500 4950
+Text Label 5500 5050 2    50   ~ 0
+ACT_IN_21
+Wire Wire Line
+	5050 5050 5500 5050
+Text Label 5500 5150 2    50   ~ 0
+ACT_IN_22
+Wire Wire Line
+	5050 5150 5500 5150
+Text Label 5500 5250 2    50   ~ 0
+ACT_IN_23
+Wire Wire Line
+	5050 5250 5500 5250
+Text Label 5500 5350 2    50   ~ 0
+ACT_IN_24
+Wire Wire Line
+	5050 5350 5500 5350
+Text Label 900  4500 0    50   ~ 0
+ACT_EN_1
+Wire Wire Line
+	1450 4500 900  4500
+Wire Wire Line
+	1450 4400 900  4400
+Wire Wire Line
+	1450 4300 900  4300
+Wire Wire Line
+	1450 4200 900  4200
+Wire Wire Line
+	1450 5000 900  5000
+Wire Wire Line
+	1450 4900 900  4900
+Wire Wire Line
+	1450 4800 900  4800
+Wire Wire Line
+	1450 5400 900  5400
+Text Label 900  4400 0    50   ~ 0
+ACT_EN_2
+Text Label 900  4300 0    50   ~ 0
+ACT_EN_3
+Text Label 900  4200 0    50   ~ 0
+ACT_EN_4
+Text Label 900  5000 0    50   ~ 0
+ACT_EN_5
+Text Label 900  4900 0    50   ~ 0
+ACT_EN_6
+Text Label 900  4800 0    50   ~ 0
+ACT_EN_7
+Text Label 900  5400 0    50   ~ 0
+ACT_EN_8
+Text Label 6850 2900 0    50   ~ 0
+FLAMM_SAFE_1
+Wire Wire Line
+	6850 2900 7450 2900
+Wire Wire Line
+	7450 3000 6850 3000
+Text Label 6850 3000 0    50   ~ 0
+FLAMM_SAFE_2
+Text Label 6800 950  0    50   ~ 0
+FLAMM_SAFE_1
+Wire Wire Line
+	6800 950  7450 950 
+Wire Wire Line
+	7450 1050 6800 1050
+Text Label 6800 1050 0    50   ~ 0
+FLAMM_SAFE_2
+$Comp
+L Device:R_US R13
+U 1 1 603DA7D2
+P 7250 1150
+F 0 "R13" V 7200 1000 50  0000 C CNN
+F 1 "0" V 7200 1250 50  0000 C CNN
+F 2 "" V 7290 1140 50  0001 C CNN
+F 3 "~" H 7250 1150 50  0001 C CNN
+	1    7250 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 1150 7450 1150
+Wire Wire Line
+	7100 1150 6550 1150
+Wire Wire Line
+	6550 1150 6550 1050
+$Comp
+L Device:R_US R18
+U 1 1 603F58C2
+P 7250 1250
+F 0 "R18" V 7200 1100 50  0000 C CNN
+F 1 "0" V 7200 1350 50  0000 C CNN
+F 2 "" V 7290 1240 50  0001 C CNN
+F 3 "~" H 7250 1250 50  0001 C CNN
+	1    7250 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R19
+U 1 1 603F5D33
+P 7250 1350
+F 0 "R19" V 7200 1200 50  0000 C CNN
+F 1 "0" V 7200 1450 50  0000 C CNN
+F 2 "" V 7290 1340 50  0001 C CNN
+F 3 "~" H 7250 1350 50  0001 C CNN
+	1    7250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R42
+U 1 1 603F5F43
+P 7250 1450
+F 0 "R42" V 7200 1300 50  0000 C CNN
+F 1 "0" V 7200 1550 50  0000 C CNN
+F 2 "" V 7290 1440 50  0001 C CNN
+F 3 "~" H 7250 1450 50  0001 C CNN
+	1    7250 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 1250 7450 1250
+Wire Wire Line
+	7400 1350 7450 1350
+Wire Wire Line
+	7400 1450 7450 1450
+Wire Wire Line
+	7100 1450 6550 1450
+Wire Wire Line
+	6550 1450 6550 1350
+Connection ~ 6550 1150
+Wire Wire Line
+	6550 1250 7100 1250
+Connection ~ 6550 1250
+Wire Wire Line
+	6550 1250 6550 1150
+Wire Wire Line
+	7100 1350 6550 1350
+Connection ~ 6550 1350
+Wire Wire Line
+	6550 1350 6550 1250
+$Comp
+L power:+5V #PWR030
+U 1 1 604570BE
+P 6550 1050
+F 0 "#PWR030" H 6550 900 50  0001 C CNN
+F 1 "+5V" H 6565 1223 50  0000 C CNN
+F 2 "" H 6550 1050 50  0001 C CNN
+F 3 "" H 6550 1050 50  0001 C CNN
+	1    6550 1050
+	1    0    0    -1  
+$EndComp
+Text Label 5850 4550 2    50   ~ 0
+HEARTBEAT_RESTART
+Wire Wire Line
+	5850 4550 5050 4550
+Wire Wire Line
+	5050 4450 5850 4450
+Text Label 5850 4450 2    50   ~ 0
+MCU_QB_INPUT
+Text Label 6800 850  0    50   ~ 0
+MCU_QB_INPUT
+Wire Wire Line
+	6800 850  7450 850 
 $EndSCHEMATC
