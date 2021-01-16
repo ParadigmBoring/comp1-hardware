@@ -1685,6 +1685,17 @@ Wire Wire Line
 Wire Wire Line
 	9650 5450 9850 5450
 $Comp
+L Power_Protection:TVS2700DRV U?
+U 1 1 6004C9B2
+P 2700 7200
+F 0 "U?" H 2829 7246 50  0000 L CNN
+F 1 "TVS2700DRV" H 2829 7155 50  0000 L CNN
+F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 2900 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tvs2700.pdf" H 2600 7200 50  0001 C CNN
+	1    2700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
 L Device:C C44
 U 1 1 6004DA0E
 P 3500 7100
@@ -1731,23 +1742,23 @@ $EndComp
 $Comp
 L power:GND #PWR0150
 U 1 1 60073B76
-P 3500 7300
-F 0 "#PWR0150" H 3500 7050 50  0001 C CNN
-F 1 "GND" H 3505 7127 50  0000 C CNN
-F 2 "" H 3500 7300 50  0001 C CNN
-F 3 "" H 3500 7300 50  0001 C CNN
-	1    3500 7300
+P 3050 7750
+F 0 "#PWR0150" H 3050 7500 50  0001 C CNN
+F 1 "GND" H 3055 7577 50  0000 C CNN
+F 2 "" H 3050 7750 50  0001 C CNN
+F 3 "" H 3050 7750 50  0001 C CNN
+	1    3050 7750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+24V #PWR0149
 U 1 1 6007493B
-P 3500 6900
-F 0 "#PWR0149" H 3500 6750 50  0001 C CNN
-F 1 "+24V" H 3515 7073 50  0000 C CNN
-F 2 "" H 3500 6900 50  0001 C CNN
-F 3 "" H 3500 6900 50  0001 C CNN
-	1    3500 6900
+P 3050 6650
+F 0 "#PWR0149" H 3050 6500 50  0001 C CNN
+F 1 "+24V" H 3065 6823 50  0000 C CNN
+F 2 "" H 3050 6650 50  0001 C CNN
+F 3 "" H 3050 6650 50  0001 C CNN
+	1    3050 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1763,11 +1774,31 @@ Connection ~ 4050 6950
 Wire Wire Line
 	4550 7250 4050 7250
 Wire Wire Line
-	4050 7250 3500 7250
+	4050 7250 3650 7250
 Connection ~ 4550 7250
 Connection ~ 4050 7250
-Connection ~ 3500 7250
+Wire Wire Line
+	3050 7750 3050 7500
+Wire Wire Line
+	3050 7500 2700 7500
+Wire Wire Line
+	3050 7500 3650 7500
+Wire Wire Line
+	3650 7500 3650 7250
+Connection ~ 3050 7500
+Connection ~ 3650 7250
+Wire Wire Line
+	3650 7250 3500 7250
+Wire Wire Line
+	3050 6950 3500 6950
 Connection ~ 3500 6950
+Wire Wire Line
+	3050 6900 2700 6900
+Wire Wire Line
+	3050 6650 3050 6900
+Connection ~ 3050 6900
+Wire Wire Line
+	3050 6900 3050 6950
 Text HLabel 1300 1550 0    50   Input ~ 0
 Actuation_Input1
 Text HLabel 1300 1750 0    50   Input ~ 0
@@ -1832,8 +1863,4 @@ Text HLabel 9650 4850 0    50   Input ~ 0
 Actuation_Enable7
 Text HLabel 9650 5450 0    50   Input ~ 0
 Actuation_Enable8
-Wire Wire Line
-	3500 6900 3500 6950
-Wire Wire Line
-	3500 7250 3500 7300
 $EndSCHEMATC
