@@ -115,26 +115,14 @@ Connection ~ 6900 3600
 Wire Wire Line
 	6900 3600 6900 3950
 Wire Wire Line
-	5200 3600 5200 3350
-Wire Wire Line
 	5800 3450 5800 3600
 Connection ~ 5800 3600
 Wire Wire Line
-	5800 3600 5200 3600
-Wire Wire Line
 	5800 3150 5800 3000
-Connection ~ 5800 3000
-Wire Wire Line
-	5800 3000 5600 3000
-Wire Wire Line
-	4800 3000 4550 3000
 Wire Wire Line
 	4550 3000 4550 3150
 Wire Wire Line
 	4550 3450 4550 3600
-Wire Wire Line
-	4550 3600 5200 3600
-Connection ~ 5200 3600
 $Comp
 L PCB_PLV005_Beyla-rescue:+5V-power #PWR0103
 U 1 1 5FBFDEDC
@@ -229,7 +217,7 @@ F 1 "Recom_R-78c-1.0" H 5200 3224 50  0000 C CNN
 F 2 "BoringFootprints:Recom_R-78C-1.0" H 5400 2700 50  0001 C CNN
 F 3 "https://d311uvhi8lkjbj.cloudfront.net/media/Datasheet/pdf/.f91HWzyW/.t321978fcd1ad139cbfa2/Datasheet-260/R-78C-1_0.pdf" H 5400 2700 50  0001 C CNN
 	1    5200 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L PCB_PLV005_Beyla-rescue:+5V-power #PWR0104
@@ -251,4 +239,16 @@ Wire Wire Line
 Connection ~ 2800 4450
 Wire Wire Line
 	2800 4000 2800 4150
+Wire Wire Line
+	5600 3000 5800 3000
+Connection ~ 5800 3000
+Wire Wire Line
+	4550 3600 5200 3600
+Wire Wire Line
+	5200 3350 5200 3600
+Connection ~ 5200 3600
+Wire Wire Line
+	5200 3600 5800 3600
+Wire Wire Line
+	4800 3000 4550 3000
 $EndSCHEMATC
