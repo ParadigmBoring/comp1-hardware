@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:PCB_PLV002_Thor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -37,7 +36,7 @@ $EndSheet
 Text Notes 7800 1850 0    118  ~ 0
 QuantumBeat
 $Comp
-L boringlib:NUCLEO-L476RG NCLO1
+L PCB_PLV002_Thor-rescue:NUCLEO-L476RG-boringlib NCLO1
 U 1 1 5FB4B31E
 P 3250 5600
 F 0 "NCLO1" H 1700 7650 50  0000 C CNN
@@ -413,7 +412,7 @@ Wire Wire Line
 Text Notes 7950 3250 0    118  ~ 0
 Acquistion
 $Comp
-L boringlib:R-78B12-2.0 U1
+L PCB_PLV002_Thor-rescue:R-78B12-2.0-boringlib U1
 U 1 1 5FC3CFC1
 P 3350 1350
 F 0 "U1" H 3350 1675 50  0000 C CNN

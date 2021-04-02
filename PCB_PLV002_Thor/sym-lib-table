@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name boringlib)(type Legacy)(uri ${KIPRJMOD}/../../boringlib/boringlib.lib)(options "")(descr ""))
   (lib (name PCB_PLV002_Heimdal-rescue)(type Legacy)(uri ${KIPRJMOD}/PCB_PLV002_Heimdal-rescue.lib)(options "")(descr ""))
+  (lib (name PCB_PLV002_Thor-rescue)(type Legacy)(uri ${KIPRJMOD}/PCB_PLV002_Thor-rescue.lib)(options "")(descr ""))
 )

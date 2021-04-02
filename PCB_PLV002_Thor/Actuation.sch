@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:PCB_PLV002_Thor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
@@ -23,28 +22,6 @@ F 1 "GND" H 1805 2927 50  0000 C CNN
 F 2 "" H 1800 3100 50  0001 C CNN
 F 3 "" H 1800 3100 50  0001 C CNN
 	1    1800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D7
-U 1 1 5FFA96AA
-P 2900 1250
-F 0 "D7" H 2900 1467 50  0000 C CNN
-F 1 "1.5KExxCA" H 2900 1376 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 2900 1050 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 2900 1250 50  0001 C CNN
-	1    2900 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J20
-U 1 1 5FFA9DE1
-P 3700 1550
-F 0 "J20" H 3780 1542 50  0000 L CNN
-F 1 "Conn_01x02" H 3780 1451 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3700 1550 50  0001 C CNN
-F 3 "~" H 3700 1550 50  0001 C CNN
-	1    3700 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -80,49 +57,6 @@ F 3 "~" H 2400 950 50  0001 C CNN
 	1    2400 950 
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D10
-U 1 1 5FFAC86A
-P 3300 1250
-F 0 "D10" H 3300 1467 50  0000 C CNN
-F 1 "1.5KExxCA" H 3300 1376 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 3300 1050 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3300 1250 50  0001 C CNN
-	1    3300 1250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3500 1550 2900 1550
-Wire Wire Line
-	3500 1650 3300 1650
-Wire Wire Line
-	2500 1650 2500 1750
-Wire Wire Line
-	2900 1400 2900 1550
-Connection ~ 2900 1550
-Wire Wire Line
-	2900 1550 2500 1550
-Wire Wire Line
-	3300 1400 3300 1650
-Connection ~ 3300 1650
-Wire Wire Line
-	3300 1650 2500 1650
-$Comp
-L power:GND #PWR0151
-U 1 1 5FFAE24F
-P 3600 1100
-F 0 "#PWR0151" H 3600 850 50  0001 C CNN
-F 1 "GND" H 3605 927 50  0000 C CNN
-F 2 "" H 3600 1100 50  0001 C CNN
-F 3 "" H 3600 1100 50  0001 C CNN
-	1    3600 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 1100 3300 1100
-Wire Wire Line
-	3600 1100 3300 1100
-Connection ~ 3300 1100
 $Comp
 L power:GND #PWR0145
 U 1 1 5FFAF151
@@ -197,75 +131,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 3000 2100 3000
 Connection ~ 2100 3000
-$Comp
-L Connector_Generic:Conn_01x02 J21
-U 1 1 5FFB5E33
-P 3700 2150
-F 0 "J21" H 3780 2142 50  0000 L CNN
-F 1 "Conn_01x02" H 3780 2051 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3700 2150 50  0001 C CNN
-F 3 "~" H 3700 2150 50  0001 C CNN
-	1    3700 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D6
-U 1 1 5FFB6FF4
-P 2850 2500
-F 0 "D6" H 2850 2717 50  0000 C CNN
-F 1 "1.5KExxCA" H 2850 2626 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 2850 2300 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 2850 2500 50  0001 C CNN
-	1    2850 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2500 2250 2850 2250
-$Comp
-L Diode:1.5KExxCA D11
-U 1 1 5FFB891D
-P 3350 2500
-F 0 "D11" H 3350 2717 50  0000 C CNN
-F 1 "1.5KExxCA" H 3350 2626 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 3350 2300 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3350 2500 50  0001 C CNN
-	1    3350 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2500 2350 2500 2250
-Wire Wire Line
-	2850 2350 2850 2250
-Connection ~ 2850 2250
-Wire Wire Line
-	2850 2250 3500 2250
-Wire Wire Line
-	3350 2350 3350 2150
-Wire Wire Line
-	2500 2150 3350 2150
-Connection ~ 3350 2150
-Wire Wire Line
-	3350 2150 3500 2150
-$Comp
-L power:GND #PWR0147
-U 1 1 5FFBC47D
-P 2850 2800
-F 0 "#PWR0147" H 2850 2550 50  0001 C CNN
-F 1 "GND" H 2855 2627 50  0000 C CNN
-F 2 "" H 2850 2800 50  0001 C CNN
-F 3 "" H 2850 2800 50  0001 C CNN
-	1    2850 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 2800 2850 2700
-Wire Wire Line
-	3350 2650 3350 2700
-Wire Wire Line
-	3350 2700 2850 2700
-Connection ~ 2850 2700
-Wire Wire Line
-	2850 2700 2850 2650
 Wire Wire Line
 	1500 1550 1300 1550
 Wire Wire Line
@@ -276,17 +141,6 @@ Wire Wire Line
 	1500 2150 1300 2150
 Wire Wire Line
 	1500 2350 1300 2350
-$Comp
-L Driver_Motor:L293D U13
-U 1 1 5FFC2589
-P 2000 2150
-F 0 "U13" H 2000 3331 50  0000 C CNN
-F 1 "L293D" H 2000 3240 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 2250 1400 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 1700 2850 50  0001 C CNN
-	1    2000 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 2550 1400 2550
 Wire Wire Line
@@ -303,28 +157,6 @@ F 1 "GND" H 5805 2927 50  0000 C CNN
 F 2 "" H 5800 3100 50  0001 C CNN
 F 3 "" H 5800 3100 50  0001 C CNN
 	1    5800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D15
-U 1 1 5FFC8BED
-P 6900 1250
-F 0 "D15" H 6900 1467 50  0000 C CNN
-F 1 "1.5KExxCA" H 6900 1376 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 6900 1050 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 6900 1250 50  0001 C CNN
-	1    6900 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J24
-U 1 1 5FFC8BF3
-P 7700 1550
-F 0 "J24" H 7780 1542 50  0000 L CNN
-F 1 "Conn_01x02" H 7780 1451 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7700 1550 50  0001 C CNN
-F 3 "~" H 7700 1550 50  0001 C CNN
-	1    7700 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -360,49 +192,6 @@ F 3 "~" H 6400 950 50  0001 C CNN
 	1    6400 950 
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D18
-U 1 1 5FFC8C0B
-P 7300 1250
-F 0 "D18" H 7300 1467 50  0000 C CNN
-F 1 "1.5KExxCA" H 7300 1376 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 7300 1050 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7300 1250 50  0001 C CNN
-	1    7300 1250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7500 1550 6900 1550
-Wire Wire Line
-	7500 1650 7300 1650
-Wire Wire Line
-	6500 1650 6500 1750
-Wire Wire Line
-	6900 1400 6900 1550
-Connection ~ 6900 1550
-Wire Wire Line
-	6900 1550 6500 1550
-Wire Wire Line
-	7300 1400 7300 1650
-Connection ~ 7300 1650
-Wire Wire Line
-	7300 1650 6500 1650
-$Comp
-L power:GND #PWR0165
-U 1 1 5FFC8C1A
-P 7600 1100
-F 0 "#PWR0165" H 7600 850 50  0001 C CNN
-F 1 "GND" H 7605 927 50  0000 C CNN
-F 2 "" H 7600 1100 50  0001 C CNN
-F 3 "" H 7600 1100 50  0001 C CNN
-	1    7600 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 1100 7300 1100
-Wire Wire Line
-	7600 1100 7300 1100
-Connection ~ 7300 1100
 $Comp
 L power:GND #PWR0161
 U 1 1 5FFC8C23
@@ -477,75 +266,6 @@ Wire Wire Line
 Wire Wire Line
 	6200 3000 6100 3000
 Connection ~ 6100 3000
-$Comp
-L Connector_Generic:Conn_01x02 J25
-U 1 1 5FFC8C4C
-P 7700 2150
-F 0 "J25" H 7780 2142 50  0000 L CNN
-F 1 "Conn_01x02" H 7780 2051 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7700 2150 50  0001 C CNN
-F 3 "~" H 7700 2150 50  0001 C CNN
-	1    7700 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D14
-U 1 1 5FFC8C52
-P 6850 2500
-F 0 "D14" H 6850 2717 50  0000 C CNN
-F 1 "1.5KExxCA" H 6850 2626 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 6850 2300 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 6850 2500 50  0001 C CNN
-	1    6850 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6500 2250 6850 2250
-$Comp
-L Diode:1.5KExxCA D19
-U 1 1 5FFC8C59
-P 7350 2500
-F 0 "D19" H 7350 2717 50  0000 C CNN
-F 1 "1.5KExxCA" H 7350 2626 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 7350 2300 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7350 2500 50  0001 C CNN
-	1    7350 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6500 2350 6500 2250
-Wire Wire Line
-	6850 2350 6850 2250
-Connection ~ 6850 2250
-Wire Wire Line
-	6850 2250 7500 2250
-Wire Wire Line
-	7350 2350 7350 2150
-Wire Wire Line
-	6500 2150 7350 2150
-Connection ~ 7350 2150
-Wire Wire Line
-	7350 2150 7500 2150
-$Comp
-L power:GND #PWR0163
-U 1 1 5FFC8C67
-P 6850 2800
-F 0 "#PWR0163" H 6850 2550 50  0001 C CNN
-F 1 "GND" H 6855 2627 50  0000 C CNN
-F 2 "" H 6850 2800 50  0001 C CNN
-F 3 "" H 6850 2800 50  0001 C CNN
-	1    6850 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 2800 6850 2700
-Wire Wire Line
-	7350 2650 7350 2700
-Wire Wire Line
-	7350 2700 6850 2700
-Connection ~ 6850 2700
-Wire Wire Line
-	6850 2700 6850 2650
 Wire Wire Line
 	5500 1550 5300 1550
 Wire Wire Line
@@ -586,28 +306,6 @@ F 3 "" H 10200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxCA D25
-U 1 1 5FFD0D0B
-P 11300 1300
-F 0 "D25" H 11300 1517 50  0000 C CNN
-F 1 "1.5KExxCA" H 11300 1426 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11300 1100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11300 1300 50  0001 C CNN
-	1    11300 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J30
-U 1 1 5FFD0D11
-P 12100 1600
-F 0 "J30" H 12180 1592 50  0000 L CNN
-F 1 "Conn_01x02" H 12180 1501 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 12100 1600 50  0001 C CNN
-F 3 "~" H 12100 1600 50  0001 C CNN
-	1    12100 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR0174
 U 1 1 5FFD0D17
 P 10500 900
@@ -640,49 +338,6 @@ F 3 "~" H 10800 1000 50  0001 C CNN
 	1    10800 1000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D27
-U 1 1 5FFD0D29
-P 11700 1300
-F 0 "D27" H 11700 1517 50  0000 C CNN
-F 1 "1.5KExxCA" H 11700 1426 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11700 1100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11700 1300 50  0001 C CNN
-	1    11700 1300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11900 1600 11300 1600
-Wire Wire Line
-	11900 1700 11700 1700
-Wire Wire Line
-	10900 1700 10900 1800
-Wire Wire Line
-	11300 1450 11300 1600
-Connection ~ 11300 1600
-Wire Wire Line
-	11300 1600 10900 1600
-Wire Wire Line
-	11700 1450 11700 1700
-Connection ~ 11700 1700
-Wire Wire Line
-	11700 1700 10900 1700
-$Comp
-L power:GND #PWR0180
-U 1 1 5FFD0D38
-P 12000 1150
-F 0 "#PWR0180" H 12000 900 50  0001 C CNN
-F 1 "GND" H 12005 977 50  0000 C CNN
-F 2 "" H 12000 1150 50  0001 C CNN
-F 3 "" H 12000 1150 50  0001 C CNN
-	1    12000 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11300 1150 11700 1150
-Wire Wire Line
-	12000 1150 11700 1150
-Connection ~ 11700 1150
 $Comp
 L power:GND #PWR0176
 U 1 1 5FFD0D41
@@ -757,75 +412,6 @@ Wire Wire Line
 Wire Wire Line
 	10600 3050 10500 3050
 Connection ~ 10500 3050
-$Comp
-L Connector_Generic:Conn_01x02 J31
-U 1 1 5FFD0D6A
-P 12100 2200
-F 0 "J31" H 12180 2192 50  0000 L CNN
-F 1 "Conn_01x02" H 12180 2101 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 12100 2200 50  0001 C CNN
-F 3 "~" H 12100 2200 50  0001 C CNN
-	1    12100 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D23
-U 1 1 5FFD0D70
-P 11250 2550
-F 0 "D23" H 11250 2767 50  0000 C CNN
-F 1 "1.5KExxCA" H 11250 2676 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11250 2350 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11250 2550 50  0001 C CNN
-	1    11250 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10900 2300 11250 2300
-$Comp
-L Diode:1.5KExxCA D29
-U 1 1 5FFD0D77
-P 11750 2550
-F 0 "D29" H 11750 2767 50  0000 C CNN
-F 1 "1.5KExxCA" H 11750 2676 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11750 2350 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11750 2550 50  0001 C CNN
-	1    11750 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10900 2400 10900 2300
-Wire Wire Line
-	11250 2400 11250 2300
-Connection ~ 11250 2300
-Wire Wire Line
-	11250 2300 11900 2300
-Wire Wire Line
-	11750 2400 11750 2200
-Wire Wire Line
-	10900 2200 11750 2200
-Connection ~ 11750 2200
-Wire Wire Line
-	11750 2200 11900 2200
-$Comp
-L power:GND #PWR0178
-U 1 1 5FFD0D85
-P 11250 2850
-F 0 "#PWR0178" H 11250 2600 50  0001 C CNN
-F 1 "GND" H 11255 2677 50  0000 C CNN
-F 2 "" H 11250 2850 50  0001 C CNN
-F 3 "" H 11250 2850 50  0001 C CNN
-	1    11250 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11250 2850 11250 2750
-Wire Wire Line
-	11750 2700 11750 2750
-Wire Wire Line
-	11750 2750 11250 2750
-Connection ~ 11250 2750
-Wire Wire Line
-	11250 2750 11250 2700
 Wire Wire Line
 	9900 1600 9700 1600
 Wire Wire Line
@@ -866,28 +452,6 @@ F 3 "" H 1850 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxCA D9
-U 1 1 5FFDAD0D
-P 2950 4150
-F 0 "D9" H 2950 4367 50  0000 C CNN
-F 1 "1.5KExxCA" H 2950 4276 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 2950 3950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 2950 4150 50  0001 C CNN
-	1    2950 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J22
-U 1 1 5FFDAD13
-P 3750 4450
-F 0 "J22" H 3830 4442 50  0000 L CNN
-F 1 "Conn_01x02" H 3830 4351 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3750 4450 50  0001 C CNN
-F 3 "~" H 3750 4450 50  0001 C CNN
-	1    3750 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR0144
 U 1 1 5FFDAD19
 P 2150 3750
@@ -920,49 +484,6 @@ F 3 "~" H 2450 3850 50  0001 C CNN
 	1    2450 3850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D12
-U 1 1 5FFDAD2B
-P 3350 4150
-F 0 "D12" H 3350 4367 50  0000 C CNN
-F 1 "1.5KExxCA" H 3350 4276 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 3350 3950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3350 4150 50  0001 C CNN
-	1    3350 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 4450 2950 4450
-Wire Wire Line
-	3550 4550 3350 4550
-Wire Wire Line
-	2550 4550 2550 4650
-Wire Wire Line
-	2950 4300 2950 4450
-Connection ~ 2950 4450
-Wire Wire Line
-	2950 4450 2550 4450
-Wire Wire Line
-	3350 4300 3350 4550
-Connection ~ 3350 4550
-Wire Wire Line
-	3350 4550 2550 4550
-$Comp
-L power:GND #PWR0152
-U 1 1 5FFDAD3A
-P 3650 4000
-F 0 "#PWR0152" H 3650 3750 50  0001 C CNN
-F 1 "GND" H 3655 3827 50  0000 C CNN
-F 2 "" H 3650 4000 50  0001 C CNN
-F 3 "" H 3650 4000 50  0001 C CNN
-	1    3650 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 4000 3350 4000
-Wire Wire Line
-	3650 4000 3350 4000
-Connection ~ 3350 4000
 $Comp
 L power:GND #PWR0146
 U 1 1 5FFDAD43
@@ -1037,75 +558,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 5900 2150 5900
 Connection ~ 2150 5900
-$Comp
-L Connector_Generic:Conn_01x02 J23
-U 1 1 5FFDAD6C
-P 3750 5050
-F 0 "J23" H 3830 5042 50  0000 L CNN
-F 1 "Conn_01x02" H 3830 4951 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3750 5050 50  0001 C CNN
-F 3 "~" H 3750 5050 50  0001 C CNN
-	1    3750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D8
-U 1 1 5FFDAD72
-P 2900 5400
-F 0 "D8" H 2900 5617 50  0000 C CNN
-F 1 "1.5KExxCA" H 2900 5526 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 2900 5200 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 2900 5400 50  0001 C CNN
-	1    2900 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2550 5150 2900 5150
-$Comp
-L Diode:1.5KExxCA D13
-U 1 1 5FFDAD79
-P 3400 5400
-F 0 "D13" H 3400 5617 50  0000 C CNN
-F 1 "1.5KExxCA" H 3400 5526 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 3400 5200 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3400 5400 50  0001 C CNN
-	1    3400 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2550 5250 2550 5150
-Wire Wire Line
-	2900 5250 2900 5150
-Connection ~ 2900 5150
-Wire Wire Line
-	2900 5150 3550 5150
-Wire Wire Line
-	3400 5250 3400 5050
-Wire Wire Line
-	2550 5050 3400 5050
-Connection ~ 3400 5050
-Wire Wire Line
-	3400 5050 3550 5050
-$Comp
-L power:GND #PWR0148
-U 1 1 5FFDAD87
-P 2900 5700
-F 0 "#PWR0148" H 2900 5450 50  0001 C CNN
-F 1 "GND" H 2905 5527 50  0000 C CNN
-F 2 "" H 2900 5700 50  0001 C CNN
-F 3 "" H 2900 5700 50  0001 C CNN
-	1    2900 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5700 2900 5600
-Wire Wire Line
-	3400 5550 3400 5600
-Wire Wire Line
-	3400 5600 2900 5600
-Connection ~ 2900 5600
-Wire Wire Line
-	2900 5600 2900 5550
 Wire Wire Line
 	1550 4450 1350 4450
 Wire Wire Line
@@ -1146,28 +598,6 @@ F 3 "" H 5900 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxCA D17
-U 1 1 5FFEB1D7
-P 7000 4050
-F 0 "D17" H 7000 4267 50  0000 C CNN
-F 1 "1.5KExxCA" H 7000 4176 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 7000 3850 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7000 4050 50  0001 C CNN
-	1    7000 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J26
-U 1 1 5FFEB1DD
-P 7800 4350
-F 0 "J26" H 7880 4342 50  0000 L CNN
-F 1 "Conn_01x02" H 7880 4251 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7800 4350 50  0001 C CNN
-F 3 "~" H 7800 4350 50  0001 C CNN
-	1    7800 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR0160
 U 1 1 5FFEB1E3
 P 6200 3650
@@ -1200,49 +630,6 @@ F 3 "~" H 6500 3750 50  0001 C CNN
 	1    6500 3750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D20
-U 1 1 5FFEB1F5
-P 7400 4050
-F 0 "D20" H 7400 4267 50  0000 C CNN
-F 1 "1.5KExxCA" H 7400 4176 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 7400 3850 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7400 4050 50  0001 C CNN
-	1    7400 4050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7600 4350 7000 4350
-Wire Wire Line
-	7600 4450 7400 4450
-Wire Wire Line
-	6600 4450 6600 4550
-Wire Wire Line
-	7000 4200 7000 4350
-Connection ~ 7000 4350
-Wire Wire Line
-	7000 4350 6600 4350
-Wire Wire Line
-	7400 4200 7400 4450
-Connection ~ 7400 4450
-Wire Wire Line
-	7400 4450 6600 4450
-$Comp
-L power:GND #PWR0166
-U 1 1 5FFEB204
-P 7700 3900
-F 0 "#PWR0166" H 7700 3650 50  0001 C CNN
-F 1 "GND" H 7705 3727 50  0000 C CNN
-F 2 "" H 7700 3900 50  0001 C CNN
-F 3 "" H 7700 3900 50  0001 C CNN
-	1    7700 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 3900 7400 3900
-Wire Wire Line
-	7700 3900 7400 3900
-Connection ~ 7400 3900
 $Comp
 L power:GND #PWR0162
 U 1 1 5FFEB20D
@@ -1317,75 +704,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 5800 6200 5800
 Connection ~ 6200 5800
-$Comp
-L Connector_Generic:Conn_01x02 J27
-U 1 1 5FFEB236
-P 7800 4950
-F 0 "J27" H 7880 4942 50  0000 L CNN
-F 1 "Conn_01x02" H 7880 4851 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7800 4950 50  0001 C CNN
-F 3 "~" H 7800 4950 50  0001 C CNN
-	1    7800 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D16
-U 1 1 5FFEB23C
-P 6950 5300
-F 0 "D16" H 6950 5517 50  0000 C CNN
-F 1 "1.5KExxCA" H 6950 5426 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 6950 5100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 6950 5300 50  0001 C CNN
-	1    6950 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6600 5050 6950 5050
-$Comp
-L Diode:1.5KExxCA D21
-U 1 1 5FFEB243
-P 7450 5300
-F 0 "D21" H 7450 5517 50  0000 C CNN
-F 1 "1.5KExxCA" H 7450 5426 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 7450 5100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7450 5300 50  0001 C CNN
-	1    7450 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6600 5150 6600 5050
-Wire Wire Line
-	6950 5150 6950 5050
-Connection ~ 6950 5050
-Wire Wire Line
-	6950 5050 7600 5050
-Wire Wire Line
-	7450 5150 7450 4950
-Wire Wire Line
-	6600 4950 7450 4950
-Connection ~ 7450 4950
-Wire Wire Line
-	7450 4950 7600 4950
-$Comp
-L power:GND #PWR0164
-U 1 1 5FFEB251
-P 6950 5600
-F 0 "#PWR0164" H 6950 5350 50  0001 C CNN
-F 1 "GND" H 6955 5427 50  0000 C CNN
-F 2 "" H 6950 5600 50  0001 C CNN
-F 3 "" H 6950 5600 50  0001 C CNN
-	1    6950 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 5600 6950 5500
-Wire Wire Line
-	7450 5450 7450 5500
-Wire Wire Line
-	7450 5500 6950 5500
-Connection ~ 6950 5500
-Wire Wire Line
-	6950 5500 6950 5450
 Wire Wire Line
 	5600 4350 5400 4350
 Wire Wire Line
@@ -1421,28 +739,6 @@ F 3 "" H 10150 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1.5KExxCA D24
-U 1 1 60038CEF
-P 11250 4150
-F 0 "D24" H 11250 4367 50  0000 C CNN
-F 1 "1.5KExxCA" H 11250 4276 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11250 3950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11250 4150 50  0001 C CNN
-	1    11250 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J28
-U 1 1 60038CF5
-P 12050 4450
-F 0 "J28" H 12130 4442 50  0000 L CNN
-F 1 "Conn_01x02" H 12130 4351 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 12050 4450 50  0001 C CNN
-F 3 "~" H 12050 4450 50  0001 C CNN
-	1    12050 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR0173
 U 1 1 60038CFB
 P 10450 3750
@@ -1475,49 +771,6 @@ F 3 "~" H 10750 3850 50  0001 C CNN
 	1    10750 3850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Diode:1.5KExxCA D26
-U 1 1 60038D0D
-P 11650 4150
-F 0 "D26" H 11650 4367 50  0000 C CNN
-F 1 "1.5KExxCA" H 11650 4276 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11650 3950 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11650 4150 50  0001 C CNN
-	1    11650 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11850 4450 11250 4450
-Wire Wire Line
-	11850 4550 11650 4550
-Wire Wire Line
-	10850 4550 10850 4650
-Wire Wire Line
-	11250 4300 11250 4450
-Connection ~ 11250 4450
-Wire Wire Line
-	11250 4450 10850 4450
-Wire Wire Line
-	11650 4300 11650 4550
-Connection ~ 11650 4550
-Wire Wire Line
-	11650 4550 10850 4550
-$Comp
-L power:GND #PWR0179
-U 1 1 60038D1C
-P 11950 4000
-F 0 "#PWR0179" H 11950 3750 50  0001 C CNN
-F 1 "GND" H 11955 3827 50  0000 C CNN
-F 2 "" H 11950 4000 50  0001 C CNN
-F 3 "" H 11950 4000 50  0001 C CNN
-	1    11950 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11250 4000 11650 4000
-Wire Wire Line
-	11950 4000 11650 4000
-Connection ~ 11650 4000
 $Comp
 L power:GND #PWR0175
 U 1 1 60038D25
@@ -1592,75 +845,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 5900 10450 5900
 Connection ~ 10450 5900
-$Comp
-L Connector_Generic:Conn_01x02 J29
-U 1 1 60038D4E
-P 12050 5050
-F 0 "J29" H 12130 5042 50  0000 L CNN
-F 1 "Conn_01x02" H 12130 4951 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 12050 5050 50  0001 C CNN
-F 3 "~" H 12050 5050 50  0001 C CNN
-	1    12050 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1.5KExxCA D22
-U 1 1 60038D54
-P 11200 5400
-F 0 "D22" H 11200 5617 50  0000 C CNN
-F 1 "1.5KExxCA" H 11200 5526 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11200 5200 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11200 5400 50  0001 C CNN
-	1    11200 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10850 5150 11200 5150
-$Comp
-L Diode:1.5KExxCA D28
-U 1 1 60038D5B
-P 11700 5400
-F 0 "D28" H 11700 5617 50  0000 C CNN
-F 1 "1.5KExxCA" H 11700 5526 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 11700 5200 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 11700 5400 50  0001 C CNN
-	1    11700 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10850 5250 10850 5150
-Wire Wire Line
-	11200 5250 11200 5150
-Connection ~ 11200 5150
-Wire Wire Line
-	11200 5150 11850 5150
-Wire Wire Line
-	11700 5250 11700 5050
-Wire Wire Line
-	10850 5050 11700 5050
-Connection ~ 11700 5050
-Wire Wire Line
-	11700 5050 11850 5050
-$Comp
-L power:GND #PWR0177
-U 1 1 60038D69
-P 11200 5700
-F 0 "#PWR0177" H 11200 5450 50  0001 C CNN
-F 1 "GND" H 11205 5527 50  0000 C CNN
-F 2 "" H 11200 5700 50  0001 C CNN
-F 3 "" H 11200 5700 50  0001 C CNN
-	1    11200 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11200 5700 11200 5600
-Wire Wire Line
-	11700 5550 11700 5600
-Wire Wire Line
-	11700 5600 11200 5600
-Connection ~ 11200 5600
-Wire Wire Line
-	11200 5600 11200 5550
 Wire Wire Line
 	9850 4450 9650 4450
 Wire Wire Line
@@ -1836,4 +1020,447 @@ Wire Wire Line
 	3500 6900 3500 6950
 Wire Wire Line
 	3500 7250 3500 7300
+$Comp
+L Driver_Motor:L293D U13
+U 1 1 5FFC2589
+P 2000 2150
+F 0 "U13" H 2000 3331 50  0000 C CNN
+F 1 "L293D" H 2000 3240 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2250 1400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 1700 2850 50  0001 C CNN
+	1    2000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 60758E86
+P 2950 1700
+F 0 "D?" H 2950 1917 50  0000 C CNN
+F 1 "D_TVS" H 2950 1826 50  0000 C CNN
+F 2 "" H 2950 1700 50  0001 C CNN
+F 3 "~" H 2950 1700 50  0001 C CNN
+	1    2950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6076C806
+P 3500 1550
+F 0 "J?" H 3580 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 3580 1451 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3500 1550 50  0001 C CNN
+F 3 "~" H 3500 1550 50  0001 C CNN
+	1    3500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1550 2950 1550
+Wire Wire Line
+	3300 1550 2950 1550
+Connection ~ 2950 1550
+Wire Wire Line
+	2500 1750 2500 1850
+Wire Wire Line
+	2500 1850 2950 1850
+Wire Wire Line
+	3300 1650 3300 1850
+Wire Wire Line
+	3300 1850 2950 1850
+Connection ~ 2950 1850
+$Comp
+L Device:D_TVS D?
+U 1 1 607FD66C
+P 2950 2300
+F 0 "D?" H 2950 2517 50  0000 C CNN
+F 1 "D_TVS" H 2950 2426 50  0000 C CNN
+F 2 "" H 2950 2300 50  0001 C CNN
+F 3 "~" H 2950 2300 50  0001 C CNN
+	1    2950 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 607FD672
+P 3500 2150
+F 0 "J?" H 3580 2142 50  0000 L CNN
+F 1 "Conn_01x02" H 3580 2051 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3500 2150 50  0001 C CNN
+F 3 "~" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2150 2950 2150
+Wire Wire Line
+	3300 2150 2950 2150
+Connection ~ 2950 2150
+Wire Wire Line
+	2500 2450 2950 2450
+Wire Wire Line
+	3300 2250 3300 2450
+Wire Wire Line
+	3300 2450 2950 2450
+Connection ~ 2950 2450
+Wire Wire Line
+	2500 2350 2500 2450
+$Comp
+L Device:D_TVS D?
+U 1 1 6088D723
+P 3000 4600
+F 0 "D?" H 3000 4817 50  0000 C CNN
+F 1 "D_TVS" H 3000 4726 50  0000 C CNN
+F 2 "" H 3000 4600 50  0001 C CNN
+F 3 "~" H 3000 4600 50  0001 C CNN
+	1    3000 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6088D729
+P 3550 4450
+F 0 "J?" H 3630 4442 50  0000 L CNN
+F 1 "Conn_01x02" H 3630 4351 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3550 4450 50  0001 C CNN
+F 3 "~" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4450 3000 4450
+Wire Wire Line
+	3350 4450 3000 4450
+Connection ~ 3000 4450
+Wire Wire Line
+	2550 4750 3000 4750
+Wire Wire Line
+	3350 4550 3350 4750
+Wire Wire Line
+	3350 4750 3000 4750
+Connection ~ 3000 4750
+$Comp
+L Device:D_TVS D?
+U 1 1 6088D736
+P 3000 5200
+F 0 "D?" H 3000 5417 50  0000 C CNN
+F 1 "D_TVS" H 3000 5326 50  0000 C CNN
+F 2 "" H 3000 5200 50  0001 C CNN
+F 3 "~" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6088D73C
+P 3550 5050
+F 0 "J?" H 3630 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 3630 4951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 3550 5050 50  0001 C CNN
+F 3 "~" H 3550 5050 50  0001 C CNN
+	1    3550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5050 3000 5050
+Wire Wire Line
+	3350 5050 3000 5050
+Connection ~ 3000 5050
+Wire Wire Line
+	2550 5350 3000 5350
+Wire Wire Line
+	3350 5150 3350 5350
+Wire Wire Line
+	3350 5350 3000 5350
+Connection ~ 3000 5350
+Wire Wire Line
+	2550 4650 2550 4750
+Wire Wire Line
+	2550 5250 2550 5350
+$Comp
+L Device:D_TVS D?
+U 1 1 6092ABBA
+P 6950 1700
+F 0 "D?" H 6950 1917 50  0000 C CNN
+F 1 "D_TVS" H 6950 1826 50  0000 C CNN
+F 2 "" H 6950 1700 50  0001 C CNN
+F 3 "~" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6092ABC0
+P 7500 1550
+F 0 "J?" H 7580 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 7580 1451 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7500 1550 50  0001 C CNN
+F 3 "~" H 7500 1550 50  0001 C CNN
+	1    7500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1550 6950 1550
+Wire Wire Line
+	7300 1550 6950 1550
+Connection ~ 6950 1550
+Wire Wire Line
+	6500 1850 6950 1850
+Wire Wire Line
+	7300 1650 7300 1850
+Wire Wire Line
+	7300 1850 6950 1850
+Connection ~ 6950 1850
+$Comp
+L Device:D_TVS D?
+U 1 1 6092ABCD
+P 6950 2300
+F 0 "D?" H 6950 2517 50  0000 C CNN
+F 1 "D_TVS" H 6950 2426 50  0000 C CNN
+F 2 "" H 6950 2300 50  0001 C CNN
+F 3 "~" H 6950 2300 50  0001 C CNN
+	1    6950 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6092ABD3
+P 7500 2150
+F 0 "J?" H 7580 2142 50  0000 L CNN
+F 1 "Conn_01x02" H 7580 2051 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7500 2150 50  0001 C CNN
+F 3 "~" H 7500 2150 50  0001 C CNN
+	1    7500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2150 6950 2150
+Wire Wire Line
+	7300 2150 6950 2150
+Connection ~ 6950 2150
+Wire Wire Line
+	6500 2450 6950 2450
+Wire Wire Line
+	7300 2250 7300 2450
+Wire Wire Line
+	7300 2450 6950 2450
+Connection ~ 6950 2450
+Wire Wire Line
+	6500 1750 6500 1850
+Wire Wire Line
+	6500 2350 6500 2450
+$Comp
+L Device:D_TVS D?
+U 1 1 609B0796
+P 7050 4500
+F 0 "D?" H 7050 4717 50  0000 C CNN
+F 1 "D_TVS" H 7050 4626 50  0000 C CNN
+F 2 "" H 7050 4500 50  0001 C CNN
+F 3 "~" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 609B079C
+P 7600 4350
+F 0 "J?" H 7680 4342 50  0000 L CNN
+F 1 "Conn_01x02" H 7680 4251 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7600 4350 50  0001 C CNN
+F 3 "~" H 7600 4350 50  0001 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4350 7050 4350
+Wire Wire Line
+	7400 4350 7050 4350
+Connection ~ 7050 4350
+Wire Wire Line
+	6600 4650 7050 4650
+Wire Wire Line
+	7400 4450 7400 4650
+Wire Wire Line
+	7400 4650 7050 4650
+Connection ~ 7050 4650
+$Comp
+L Device:D_TVS D?
+U 1 1 609B07A9
+P 7050 5100
+F 0 "D?" H 7050 5317 50  0000 C CNN
+F 1 "D_TVS" H 7050 5226 50  0000 C CNN
+F 2 "" H 7050 5100 50  0001 C CNN
+F 3 "~" H 7050 5100 50  0001 C CNN
+	1    7050 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 609B07AF
+P 7600 4950
+F 0 "J?" H 7680 4942 50  0000 L CNN
+F 1 "Conn_01x02" H 7680 4851 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 7600 4950 50  0001 C CNN
+F 3 "~" H 7600 4950 50  0001 C CNN
+	1    7600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4950 7050 4950
+Wire Wire Line
+	7400 4950 7050 4950
+Connection ~ 7050 4950
+Wire Wire Line
+	6600 5250 7050 5250
+Wire Wire Line
+	7400 5050 7400 5250
+Wire Wire Line
+	7400 5250 7050 5250
+Connection ~ 7050 5250
+Wire Wire Line
+	6600 4550 6600 4650
+Wire Wire Line
+	6600 5150 6600 5250
+$Comp
+L Device:D_TVS D?
+U 1 1 60A38280
+P 11350 1750
+F 0 "D?" H 11350 1967 50  0000 C CNN
+F 1 "D_TVS" H 11350 1876 50  0000 C CNN
+F 2 "" H 11350 1750 50  0001 C CNN
+F 3 "~" H 11350 1750 50  0001 C CNN
+	1    11350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60A38286
+P 11900 1600
+F 0 "J?" H 11980 1592 50  0000 L CNN
+F 1 "Conn_01x02" H 11980 1501 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 11900 1600 50  0001 C CNN
+F 3 "~" H 11900 1600 50  0001 C CNN
+	1    11900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 1600 11350 1600
+Wire Wire Line
+	11700 1600 11350 1600
+Connection ~ 11350 1600
+Wire Wire Line
+	10900 1900 11350 1900
+Wire Wire Line
+	11700 1700 11700 1900
+Wire Wire Line
+	11700 1900 11350 1900
+Connection ~ 11350 1900
+$Comp
+L Device:D_TVS D?
+U 1 1 60A38293
+P 11350 2350
+F 0 "D?" H 11350 2567 50  0000 C CNN
+F 1 "D_TVS" H 11350 2476 50  0000 C CNN
+F 2 "" H 11350 2350 50  0001 C CNN
+F 3 "~" H 11350 2350 50  0001 C CNN
+	1    11350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60A38299
+P 11900 2200
+F 0 "J?" H 11980 2192 50  0000 L CNN
+F 1 "Conn_01x02" H 11980 2101 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 11900 2200 50  0001 C CNN
+F 3 "~" H 11900 2200 50  0001 C CNN
+	1    11900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 2200 11350 2200
+Wire Wire Line
+	11700 2200 11350 2200
+Connection ~ 11350 2200
+Wire Wire Line
+	10900 2500 11350 2500
+Wire Wire Line
+	11700 2300 11700 2500
+Wire Wire Line
+	11700 2500 11350 2500
+Connection ~ 11350 2500
+Wire Wire Line
+	10900 1800 10900 1900
+Wire Wire Line
+	10900 2400 10900 2500
+$Comp
+L Device:D_TVS D?
+U 1 1 60ACDE36
+P 11300 4600
+F 0 "D?" H 11300 4817 50  0000 C CNN
+F 1 "D_TVS" H 11300 4726 50  0000 C CNN
+F 2 "" H 11300 4600 50  0001 C CNN
+F 3 "~" H 11300 4600 50  0001 C CNN
+	1    11300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60ACDE3C
+P 11850 4450
+F 0 "J?" H 11930 4442 50  0000 L CNN
+F 1 "Conn_01x02" H 11930 4351 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 11850 4450 50  0001 C CNN
+F 3 "~" H 11850 4450 50  0001 C CNN
+	1    11850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4450 11300 4450
+Wire Wire Line
+	11650 4450 11300 4450
+Connection ~ 11300 4450
+Wire Wire Line
+	10850 4750 11300 4750
+Wire Wire Line
+	11650 4550 11650 4750
+Wire Wire Line
+	11650 4750 11300 4750
+Connection ~ 11300 4750
+$Comp
+L Device:D_TVS D?
+U 1 1 60ACDE49
+P 11300 5200
+F 0 "D?" H 11300 5417 50  0000 C CNN
+F 1 "D_TVS" H 11300 5326 50  0000 C CNN
+F 2 "" H 11300 5200 50  0001 C CNN
+F 3 "~" H 11300 5200 50  0001 C CNN
+	1    11300 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60ACDE4F
+P 11850 5050
+F 0 "J?" H 11930 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 11930 4951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 11850 5050 50  0001 C CNN
+F 3 "~" H 11850 5050 50  0001 C CNN
+	1    11850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 5050 11300 5050
+Wire Wire Line
+	11650 5050 11300 5050
+Connection ~ 11300 5050
+Wire Wire Line
+	10850 5350 11300 5350
+Wire Wire Line
+	11650 5150 11650 5350
+Wire Wire Line
+	11650 5350 11300 5350
+Connection ~ 11300 5350
+Wire Wire Line
+	10850 4650 10850 4750
+Wire Wire Line
+	10850 5250 10850 5350
 $EndSCHEMATC

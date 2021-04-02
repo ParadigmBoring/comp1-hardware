@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:PCB_PLV002_Thor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -210,7 +209,7 @@ F 3 "" H 2950 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:ADC128S022 U11
+L PCB_PLV002_Thor-rescue:ADC128S022-boringlib U11
 U 1 1 6012E545
 P 6700 1300
 F 0 "U11" H 6400 1600 50  0000 C CNN
@@ -1873,7 +1872,7 @@ F 3 "" H 8400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L boringlib:ADC128S022 U12
+L PCB_PLV002_Thor-rescue:ADC128S022-boringlib U12
 U 1 1 603A2480
 P 6700 2900
 F 0 "U12" H 6400 3200 50  0000 C CNN
